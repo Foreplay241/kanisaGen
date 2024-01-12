@@ -253,6 +253,11 @@ class TEXIOTY(LabelFrame):
         if self.input_list[0] == "kommands":
             self.clear_texoty()
             self.priont_commands()
+
+        if self.input_list[0] == "RSG":
+            self.clear_texoty()
+            self.make_random_sentence()
+
         # ENTER DIARY MODE
         if self.input_list[0] == "dear_sys,":
             st = self.start_diary_mode()
@@ -467,13 +472,14 @@ class TEXIOTY(LabelFrame):
         :param dioct2_name:
         """
         for key in dioct:
+            # If there is a dioct_name, there is an inner dictionary.
             if dioct_name:
                 lead_space = " " * (len(dioct_name) - 1)
                 self.priont_string(f'{lead_space}└{key}┐')
             else:
                 self.priont_string(f'{key}┐')
             if type(dioct[key]) == str:
-                self.priont_string(f'{" " * (len(key) - 1)}└{dioct[key]}')
+                self.priont_string(f'{" " * (len(key) - 1)} └{dioct[key]}')
             elif type(dioct[key]) == list:
                 self.priont_list(key, dioct[key], dioct_name)
             elif type(dioct[key]) == dict:
@@ -643,6 +649,18 @@ class TEXIOTY(LabelFrame):
         #                  "'kommands'": ["Displays this."],
         #                  "'dl'": ["Download the audio of a youtube video.", "'dl [video link]'"]}
         self.priont_dict(self.commands_dict)
+
+    def make_random_sentence(self):
+        subj = random.choice(["A full grown clown-adult", "A toy robot", "Superman", "My 9th grade English teacher",
+                              "The local veterinary", "The next door neighbor", "The slowest firefighter"])
+        acti = random.choice(["kicked", "jumped over", "stole", "made a sandwich with", "smoked something with",
+                              "got too drunk with", "couldn't find"])
+        obje = random.choice(["a soccer ball", "my brand new lego set", "my first dog", "the tall shady tree",
+                              "some nasty underwear", "a dead skunk"])
+        afte = random.choice(["then did a cartwheel", "after beating cheeks with grandpa", "and obviously died",
+                              "and decided to rob a liquer store", "but couldn't plant a potato",
+                              "mission accomplished"])
+        self.priont_string(f"{subj} {acti} {obje}, {afte}{random.choice(['.', '!', '?'])}")
 
 
 def create_date_entry(entry_time: datetime, entry_list: list):

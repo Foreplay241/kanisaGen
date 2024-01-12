@@ -69,11 +69,11 @@ HUMAN_DICT = {
     "katy_perry": "0467535662",
     "paul_rudd": "0023299295",
     "michael_render": "0167209274",
-    "trevor_vansack": "0645576577",
-    "rudolfo_benedicto": "0784937479",
-    "megan_vansack": "0588365596",
-    "samantha_vansack": "0536439196",
-    "glenda_mae_miguel": "0845961525"
+    # "trevor_vansack": "0645576577",
+    # "rudolfo_benedicto": "0784937479",
+    # "megan_vansack": "0588365596",
+    # "samantha_vansack": "0536439196",
+    # "glenda_mae_miguel": "0845961525"
 }
 
 HUMAN_INTERESTS = {
