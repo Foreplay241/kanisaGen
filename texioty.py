@@ -12,7 +12,8 @@ from PIL import Image, ImageDraw
 # import wordie
 # from manfried import TalkingPinata
 from settings import *
-# from pytube import YouTube, Playlist
+
+from pytube import YouTube, Playlist
 
 # load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -45,30 +46,33 @@ class TEXIOTY(LabelFrame):
         # self.ARTAY_frame: artay.ARTAY = ARTAY
         # self.KINVOW_frame: kinvow.KINVOW = KINVOW
         # self.manny = TalkingPinata()
-        self.output_text = Text(self, height=26, width=69, bg="light blue", relief=SUNKEN)
-        self.output_text.grid(column=0, row=0, rowspan=28)
+        self.texoty = Text(self, height=26, width=69, bg="light blue", relief=SUNKEN)
+        self.texoty.grid(column=0, row=0, rowspan=28)
         self.input_str_var = StringVar()
-        self.input_text_entry = Entry(self, width=69, bg="light green", textvariable=self.input_str_var)
-        self.input_text_entry.grid(column=0, row=29)
-        # CONFIG LANGUAGE TAGS
-        self.output_text.tag_config("English", background="light blue", foreground="blue")
-        self.output_text.tag_config("French", background="blue", foreground="red")
-        self.output_text.tag_config("Filipino", background="gold", foreground="blue")
-        self.output_text.tag_config("Spanish", background="red", foreground="gold")
-        self.output_text.tag_config("German", background="black", foreground="yellow")
+        self.texity = Entry(self, width=69, bg="light green", textvariable=self.input_str_var)
+        self.texity.grid(column=0, row=29)
+        # CONFIG LANGUAGE TAGS FOR LATER USE
+        self.texoty.tag_config("English", background="light blue", foreground="blue")
+        self.texoty.tag_config("French", background="blue", foreground="red")
+        self.texoty.tag_config("Filipino", background="gold", foreground="blue")
+        self.texoty.tag_config("Spanish", background="red", foreground="gold")
+        self.texoty.tag_config("German", background="black", foreground="yellow")
 
-        self.input_text_entry.bind('<Return>', lambda e: self.input_from_texity())
-        self.input_text_entry.bind('<KP_Enter>', lambda e: self.input_from_texity())
-        self.input_text_entry.bind('<Key>', self.key_test)
+        self.texity.bind('<Return>', lambda e: self.input_from_texity())
+        self.texity.bind('<KP_Enter>', lambda e: self.input_from_texity())
+        self.texity.bind('<Key>', self.key_test)
         self.isTestingKeys = False
+        # DIARY SETUP
         self.isDiary = False
         self.diary_line_length = 75
         self.diarySentenceList = []
         self.prev_kommand_list = []
+
+        # KOMMAND CYCLING
         self.kom_index = 0
-        self.input_text_entry.bind('<Up>', lambda e: self.previous_kommand())
-        self.input_text_entry.bind('<Down>', lambda e: self.next_kommand())
-        self.input_text_entry.focus_set()
+        self.texity.bind('<Up>', lambda e: self.previous_kommand())
+        self.texity.bind('<Down>', lambda e: self.next_kommand())
+        self.texity.focus_set()
 
         self.base_loopring_api_url = "https://api3.loopring.io"
 
@@ -79,7 +83,7 @@ class TEXIOTY(LabelFrame):
                               "'dear_sys,'": ["Enters into diary mode.",
                                               "Anything typed will be added to a diary entry."],
                               "'/until_next_time'": ["Exits diary mode.", "Saves the entry into the .diary folder."],
-                              "'help ()'": ["Displays some help about the program itself."],
+                              "'help'": ["Displays some help about the program itself."],
                               "'kommands'": ["Displays this."],
                               "'dl [video link]'": ["Currently disabled", "Download the audio of a youtube video."]}
 
@@ -185,8 +189,8 @@ class TEXIOTY(LabelFrame):
 
     def wait_for_response(self, response_to_wait_for='') -> str:
         self.priont_string('Saywhatnow?')
-        response = self.input_text_entry.get()
-        self.input_text_entry.setvar(value='')
+        response = self.texity.get()
+        self.texity.setvar(value='')
         return response
 
     def previous_kommand(self):
@@ -243,6 +247,7 @@ class TEXIOTY(LabelFrame):
 
         if self.input_list:
             self.prev_kommand_list.append(text_input)
+
         # PRINT THE KOMMAND DICT TO TEXOTY
         if self.input_list[0] == "help" or self.input_list[0] == "?":
             self.clear_texoty()
@@ -267,7 +272,7 @@ class TEXIOTY(LabelFrame):
         # SET THE LANGUAGE OF TEXOTY
         if self.input_list[0] == "set":
             self.chosen_tongue = self.input_list[1]
-            self.output_text.tag_add(self.chosen_tongue, "0.0", END)
+            self.texoty.tag_add(self.chosen_tongue, "0.0", END)
             self.configure(text=f'Texioty: {self.chosen_tongue}')
 
         if self.input_list[0] == "dl":
@@ -289,7 +294,8 @@ class TEXIOTY(LabelFrame):
             # address = self.IDUTC_frame.kre8dict['use_id']
             mm_address = '0xb1A955A7Aa511a7EAA8215b8e086ed2C5d5fE916'
             gs_address = '0xEFc9Fe27d230f89D605d1b59d0BE62fe4da93659'
-            my_addresses = [mm_address, gs_address]
+            lr_address = '0x7d8e7c819e8a1d5e918d81a7d2d00959e85e3404'
+            my_addresses = [mm_address, gs_address, lr_address]
             for adrs in my_addresses:
                 loopringAccountDict = self.find_loopring_account(adrs)
                 nftDict = self.check_nfts(loopringAccountDict['accountId'])
@@ -343,17 +349,17 @@ class TEXIOTY(LabelFrame):
         #         print(respo)
         self.input_str_var.set("")
 
-        if len(text_input) == 1:
-            kre8dict = self.IDUTC_frame.kre8dict
-            size = set_masterpiece_size(kre8dict['artributes'][3])
-            nim = Image.new("RGBA", size, DRS_PURPLE)
-            wordie.check_hangman_letter(text_input, kre8dict)
-            wordie.update_hangman(nim, kre8dict)
-            self.priont_dict(kre8dict)
-            save_name = f"Wordie/{kre8dict['artributes'][3]}/{kre8dict['name']}.png"
-            nim.save(save_name)
-            self.crimg = PhotoImage(file=save_name)
-            self.KINVOW_frame.use_canvas.create_image(320, 320, image=self.crimg)
+        # if len(text_input) == 1:
+        #     kre8dict = self.IDUTC_frame.kre8dict
+        #     size = set_masterpiece_size(kre8dict['artributes'][3])
+        #     nim = Image.new("RGBA", size, DRS_PURPLE)
+        #     wordie.check_hangman_letter(text_input, kre8dict)
+        #     wordie.update_hangman(nim, kre8dict)
+        #     self.priont_dict(kre8dict)
+        #     save_name = f"Wordie/{kre8dict['artributes'][3]}/{kre8dict['name']}.png"
+        #     nim.save(save_name)
+        #     self.crimg = PhotoImage(file=save_name)
+        #     self.KINVOW_frame.use_canvas.create_image(320, 320, image=self.crimg)
 
     def upload_discord(self):
         pass
@@ -455,13 +461,13 @@ class TEXIOTY(LabelFrame):
         self.KINVOW_frame.generate_gaym(img, kre8dict)
 
     def print_to_texoty(self, string_to_display: str, font_color='blue'):
-        self.output_text.configure(fg=font_color)
-        self.output_text.insert(END, string_to_display + "\n")
-        self.output_text.yview(END)
+        self.texoty.configure(fg=font_color)
+        self.texoty.insert(END, string_to_display + "\n")
+        self.texoty.yview(END)
 
     def clear_texoty(self):
         """Clear all the text from texoty."""
-        self.output_text.delete("0.0", END)
+        self.texoty.delete("0.0", END)
 
     def priont_dict(self, dioct: dict, dioct_name=None, dioct2_name=None):
         """
@@ -496,10 +502,10 @@ class TEXIOTY(LabelFrame):
         @param striong:
         @param dioct_name:
         """
-        self.output_text.configure(fg=font_color)
-        self.output_text.tag_add(self.chosen_tongue, "1.0", END)
-        self.output_text.insert(END, striong + "\n")
-        self.output_text.yview(END)
+        self.texoty.configure(fg=font_color)
+        self.texoty.tag_add(self.chosen_tongue, "1.0", END)
+        self.texoty.insert(END, striong + "\n")
+        self.texoty.yview(END)
 
     def priont_list(self, key_of_list: str, liost: list, dioct_name=None):
         """
@@ -637,30 +643,19 @@ class TEXIOTY(LabelFrame):
         pass
 
     def priont_commands(self):
-        # commands_dict = {"'kre8'": ["Just add a space and any of the art styles.",
-        #                             "Such as 'glyth' or 'recipe' or 'foto'",
-        #                             "To use multiple styles, just put a space between each style.",
-        #                             "'kre8 glyth' or 'kre8 foto glyth'"],
-        #                  "'disp'": ["Display the current kre8dict."],
-        #                  "'dear_sys,'": ["Enters into diary mode.",
-        #                                  "Anything typed will be added to a diary entry."],
-        #                  "'until_next_time'": ["Exits diary mode.", "Saves the entry into the .diary folder."],
-        #                  "'help'": ["Displays some help about the program itself."],
-        #                  "'kommands'": ["Displays this."],
-        #                  "'dl'": ["Download the audio of a youtube video.", "'dl [video link]'"]}
         self.priont_dict(self.commands_dict)
 
     def make_random_sentence(self):
-        subj = random.choice(["A full grown clown-adult", "A toy robot", "Superman", "My 9th grade English teacher",
-                              "The local veterinary", "The next door neighbor", "The slowest firefighter"])
-        acti = random.choice(["kicked", "jumped over", "stole", "made a sandwich with", "smoked something with",
-                              "got too drunk with", "couldn't find"])
-        obje = random.choice(["a soccer ball", "my brand new lego set", "my first dog", "the tall shady tree",
-                              "some nasty underwear", "a dead skunk"])
-        afte = random.choice(["then did a cartwheel", "after beating cheeks with grandpa", "and obviously died",
-                              "and decided to rob a liquer store", "but couldn't plant a potato",
-                              "mission accomplished"])
-        self.priont_string(f"{subj} {acti} {obje}, {afte}{random.choice(['.', '!', '?'])}")
+        subject = random.choice(["A full grown clown-adult", "A scary robot", "Superman", "My 9th grade English teacher",
+                                 "The local veterinary", "The next door neighbor", "The slowest firefighter", "Jeremy"])
+        action = random.choice(["kicked", "jumped over", "stole", "made a sandwich with", "smoked something with",
+                                "got too drunk with", "couldn't find", "made the dumbest face at"])
+        objekt = random.choice(["a soccer ball", "my brand new lego set", "my first dog", "the tall shady tree",
+                                "some dirty underwear", "a dead skunk"])
+        aftermath = random.choice(["then did a cartwheel", "after beating cheeks with grandpa", "and obviously died",
+                                   "and decided to rob a liquer store", "but couldn't plant a potato",
+                                   "mission accomplished"])
+        self.priont_string(f"{subject} {action} {objekt}, {aftermath}{random.choice(['.', '!', '?'])}")
 
 
 def create_date_entry(entry_time: datetime, entry_list: list):
