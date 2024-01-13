@@ -1,5 +1,6 @@
 import json
 import os
+import random
 from datetime import time, datetime
 from os.path import exists
 from tkinter import *
@@ -267,6 +268,10 @@ class TEXIOTY(LabelFrame):
             self.clear_texoty()
             self.make_random_sentence()
 
+        if self.input_list[0] == "madlib":
+            self.clear_texoty()
+            self.start_madlib_story()
+
         # ENTER DIARY MODE
         if self.input_list[0] == "dear_sys,":
             st = self.start_diary_mode()
@@ -395,12 +400,15 @@ class TEXIOTY(LabelFrame):
                                  "The local veterinary", "The next door neighbor", "The slowest firefighter", "Jeremy"])
         action = random.choice(["kicked", "jumped over", "stole", "made a sandwich with", "smoked something with",
                                 "got too drunk with", "couldn't find", "made the dumbest face at"])
-        objekt = random.choice(["a soccer ball", "my brand new lego set", "my first dog", "the tall shady tree",
+        objekt = random.choice([f"a {random.choice(['soccer ', 'foot', 'basket', 'base'])}ball", "my brand new lego set", "my first dog", "the tall shady tree",
                                 "some dirty underwear", "a dead skunk"])
         aftermath = random.choice(["then did a cartwheel", "after beating cheeks with grandpa", "and obviously died",
                                    "and decided to rob a liquer store", "but couldn't plant a potato",
                                    "mission accomplished"])
         self.priont_string(f"{subject} {action} {objekt}, {aftermath}{random.choice(['.', '!', '?'])}")
+
+    def start_madlib_story(self, ):
+        pass
 
 
 def create_date_entry(entry_time: datetime, entry_list: list):
@@ -442,28 +450,6 @@ def timestamp_line_entry(entry_time: datetime, entry_line: str, lead_line=" ", f
             ret_str = entry_line + follow_line + time_stamp + f':{entry_time.microsecond:2d}'
 
     return ret_str
-
-
-def set_masterpiece_size(image_size: str) -> (int, int):
-    """
-    Set the size of the masterpiece from animal to pixels.
-    @param image_size:
-    @return:
-    """
-    size = (0, 0)
-    if image_size == "Chicken":
-        size = (320, 320)
-    elif image_size == "Dog":
-        size = (640, 640)
-    elif image_size == "Camel":
-        size = (960, 960)
-    elif image_size == "Avatar":
-        size = (500, 500)
-    elif image_size == "Tile":
-        size = (500, 700)
-    elif image_size == "Banner":
-        size = (1500, 500)
-    return size
 
 
 def save_json(kre8dict: dict):
