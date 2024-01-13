@@ -12,10 +12,6 @@ class Application(tk.Frame):
         self.idutc_frame.grid(column=1, row=0)
         self.texioty_frame = TEXIOTY(master=master, IDUTC=self.idutc_frame)
         self.texioty_frame.grid(column=0, row=1)
-        self.artay_frame = ARTAY(master=master)
-        self.artay_frame.grid(column=0, row=0)
-        self.kinvow_frame = KINVOW(master=master)
-        self.kinvow_frame.grid(column=1, row=1)
 
 
 # Press the green button in the gutter to run the script.
