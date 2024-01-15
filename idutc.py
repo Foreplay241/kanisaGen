@@ -6,25 +6,21 @@ from tkinter import *
 from tkinter import ttk
 from tkinter.filedialog import askopenfilename
 from settings import *
-# import sourceOSRS
-# import sourceMTG
-# import sourceREDDIT
+import sourceOSRS
+import sourceMTG
+import sourceREDDIT
 
 
 class IDUTC(tk.LabelFrame):
-    def __init__(self, master=None, TEXIOTY=None, ARTAY=None, KINVOW=None):
+    def __init__(self, master=None, TEXIOTY=None):
         """
         This is the frame for inputting the ID and UTC.
 
         :param master: Toolbox frame that contains each Tul.
-        :param ARTAY: Array of art. Tul for selecting basic options.
-        :param KINVOW: Canvas window. Tul for displaying chosen options.
         :param TEXIOTY: Texioty frame, for textual input and output.
         """
         super().__init__(master)
         self.configure(text="idutc")
-        self.ARTAY = ARTAY
-        self.KINVOW = KINVOW
         self.TEXIOTY = TEXIOTY
         self.entry_ID_string_var = StringVar()
         self.entry_UTC_string_var = StringVar()
@@ -44,13 +40,10 @@ class IDUTC(tk.LabelFrame):
         self.set_button.grid(column=3, row=1)
         self.save_button.grid(column=4, row=0)
         self.load_button.grid(column=4, row=1)
-        """
+
         data_source_options = [
             "Random", "Reddit", "OSRS",
-            "Human", "MTG", "Barcode"
-        ]
-        """
-        data_source_options = ["Random", "Human", "OSRS"]
+            "Human", "MTG"]
 
         self.artyle_artributes_dict = {
             "Transparency": ["Door", "Window"],

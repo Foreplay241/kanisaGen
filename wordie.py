@@ -8,6 +8,10 @@ from PIL import Image, ImageDraw, ImageFont
 from settings import *
 ttf = ImageFont.truetype('emonob.ttf', 22)
 
+HANGMAN_PHRASES = ["The quick brown fox jumped over the lazy dog.", "If you guess the letter Q, I win.",
+                   "Why did the chicken cross the road?", "How much wood would a woodchuck, chuck. If a woodchuck could chuck wood?"
+                   ]
+
 HANGMAN_TEXTMAN_LIST = ["  ╔═════╕   \n"
                         "  ║     ┇   \n"
                         "  ║         \n"
@@ -83,32 +87,26 @@ def prompto(img: Image, kre8dict: dict) -> Image:
     pass
 
 
-def hangman(img: Image, kre8dict: dict) -> Image:
-    nl = kre8dict["number_list"]
-    cl = kre8dict["color_list"]
-    draw = ImageDraw.Draw(img)
-    w, h = img.size
-    chosen_word = kre8dict["Masterpiece"]["Wordie"]["Hangman"]["Chosen"]
-    hidden_word = kre8dict["Masterpiece"]["Wordie"]["Hangman"]["Hidden"]
-    draw.multiline_text((w//2, h//6), text=HANGMAN_TEXTMAN_LIST[0], font=ttf)
-    draw.text((w//2, int(h*(5/7))), text=dict_to_str(hidden_word), font=ttf)
-    draw.text((w//8, h//6), text="Missed Letters:", font=ttf)
-    return img
-
-
-def update_hangman(img: Image, kre8dict: dict) -> Image:
-    nl = kre8dict["number_list"]
-    cl = kre8dict["color_list"]
-    draw = ImageDraw.Draw(img)
-    w, h = img.size
-    chosen_word = kre8dict["Wordie"]["Hangman"]["Chosen"]
-    hidden_word = kre8dict["Wordie"]["Hangman"]["Hidden"]
-    missed_count = len(kre8dict["Wordie"]["Hangman"]["Missed Letters"])
-    draw.multiline_text((w//2, h//6), text=HANGMAN_TEXTMAN_LIST[missed_count], font=ttf)
-    draw.text((w//2, int(h*(5/7))), text=dict_to_str(hidden_word), font=ttf)
-    draw.text((w//8, h//6), text="Missed Letters:", font=ttf)
-    draw.multiline_text((w//8, h//5), text=", ".join(kre8dict["Wordie"]["Hangman"]["Missed Letters"]), font=ttf)
-    return img
+def generate_madlib_sentence(action: str, kre8dict: dict) -> str:
+    number = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][0]
+    pet_name = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][1]
+    furniture = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][2]
+    adjective = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][3]
+    location = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][4]
+    noun = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][5]
+    pronoun = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][6]
+    animal = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][7]
+    food = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][8]
+    vehicle = ANOTHER_WORD_LISTS[random.choice(kre8dict['use_id'])][9]
+    time_prepword = random.choice(["before", "while", "after", "since"])
+    space_prepword = random.choice(["between", "above", "underneath", "beside"])
+    determiner = random.choice(['a', 'some', 'the', 'that'])
+    send_sent = f"{pronoun.title()} {action} {determiner} {adjective} {noun}"
+    send_sent += random.choice([".", ", ", "!"])
+    print(send_sent[-2:])
+    if send_sent[-2:] == ", ":
+        send_sent += f"{time_prepword} {pet_name.title()} the {animal} ate {food}s in {location}{random.choice(['.', '!'])}"
+    return send_sent
 
 
 def dict_to_str(kre8dict: dict) -> str:
@@ -119,21 +117,19 @@ def dict_to_str(kre8dict: dict) -> str:
     return hidden_word_str
 
 
-def check_hangman_letter(letter_to_check: str, kre8dict: dict) -> dict:
-    chosen_word = kre8dict["Wordie"]["Hangman"]["Chosen"]
-    hidden_word = kre8dict["Wordie"]["Hangman"]["Hidden"]
-    if letter_to_check in chosen_word:
-        for i in range(len(chosen_word)):
-            if letter_to_check*(i+1) in hidden_word:
-                if hidden_word[letter_to_check*(i+1)] == " ◙ ":
-                    hidden_word[letter_to_check*(i+1)] = f' {letter_to_check} '
+def check_hangman_letter(letter_to_check: str, chosen_phrase: str, hidden_phrase: dict, missed_letters: list) -> (dict, list):
+    if letter_to_check in chosen_phrase:
+        for i in range(len(chosen_phrase.lower())):
+            if letter_to_check*(i+1) in hidden_phrase:
+                if hidden_phrase[letter_to_check*(i+1)] == "◙":
+                    hidden_phrase[letter_to_check*(i+1)] = f'{letter_to_check}'
     else:
-        if letter_to_check in kre8dict["Wordie"]["Hangman"]["Missed Letters"]:
+        if letter_to_check in missed_letters:
             pass
         else:
-            kre8dict["Wordie"]["Hangman"]["Missed Letters"].append(letter_to_check)
+            missed_letters.append(letter_to_check)
 
-    return hidden_word
+    return hidden_phrase, missed_letters
 
 
 def word_search(img: Image, kre8dict: dict) -> Image:

@@ -3,7 +3,7 @@ import random
 import runescapeapi as rs
 import OSRSwords
 
-OSRS_player_list = ['lemongrab_fe', '7_45_PM', 'dietsheep', "Zezima", "CraniumMash", "BruvOSRS"]
+OSRS_player_list = ['lemongrab_fe', '7_45_PM', 'dietsheep', "Zezima", "CraniumMash"]
 
 
 def new_chosen_player(player: str) -> dict:

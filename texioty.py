@@ -6,15 +6,9 @@ from os.path import exists
 from tkinter import *
 import requests
 import idutc
-# import kinvow
-# from dotenv import load_dotenv
-from PIL import Image, ImageDraw
-# import mujic
-# import wordie
+import wordie
 # from manfried import TalkingPinata
 from settings import *
-
-from pytube import YouTube, Playlist
 
 # load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -25,8 +19,9 @@ headers = {
 textbox_width = 88
 
 
+
 class TEXIOTY(LabelFrame):
-    def __init__(self, master=None, IDUTC=None, ARTAY=None, KINVOW=None):
+    def __init__(self, master=None, IDUTC=None):
         """
         An array of art. A few styles turns into alot of styles. Maybe too many styles, possibly not enough.
         The world may never know.
@@ -41,13 +36,8 @@ class TEXIOTY(LabelFrame):
         self.crimg = None
         self.tongue_list = ["English", "Filipino", "French", "Spanish", "German"]
         self.chosen_tongue = "English"
-        # self.chosen_tongue = random.choice(self.tongue_list)
         self.configure(text=f'Texioty:')
         self.IDUTC_frame: idutc.IDUTC = IDUTC
-        # import artay
-        # self.ARTAY_frame: artay.ARTAY = ARTAY
-        # self.KINVOW_frame: kinvow.KINVOW = KINVOW
-        # self.manny = TalkingPinata()
         self.texoty = Text(self, height=32, width=textbox_width, bg="light blue", relief=SUNKEN)
         self.texoty.grid(column=0, row=0, rowspan=28)
         self.input_str_var = StringVar()
@@ -63,12 +53,18 @@ class TEXIOTY(LabelFrame):
         self.texity.bind('<Return>', lambda e: self.input_from_texity())
         self.texity.bind('<KP_Enter>', lambda e: self.input_from_texity())
         self.texity.bind('<Key>', self.key_test)
+        # DIFFERENT MODES TO BE ENABLED AND DISABLED
         self.isTestingKeys = False
-        # DIARY SETUP
         self.isDiary = False
+        self.isHiLo = False
         self.diary_line_length = 75
         self.diarySentenceList = []
         self.prev_kommand_list = []
+
+        self.isHangman = False
+        self.missed_hangman_letters = []
+        self.hangman_phrase = random.choice(wordie.HANGMAN_PHRASES)
+        self.hidden_hangman_phrase = {}
 
         # KOMMAND CYCLING
         self.kom_index = 0
@@ -78,16 +74,12 @@ class TEXIOTY(LabelFrame):
 
         self.base_loopring_api_url = "https://api3.loopring.io"
 
-        self.commands_dict = {"'kre8 [art-style]'": ["Creates a masterpiece with the given art style."],
-                              "'discord [art-style]'": ["Currently disabled",
-                                                        "Create a masterpiece and send to discord."],
-                              "'disp'": ["Display the current kre8dict."],
+        self.commands_dict = {"'disp'": ["Display the current kre8dict."],
                               "'dear_sys,'": ["Enters into diary mode.",
                                               "Anything typed will be added to a diary entry."],
                               "'/until_next_time'": ["Exits diary mode.", "Saves the entry into the .diary folder."],
                               "'help'": ["Displays some help about the program itself."],
-                              "'kommands'": ["Displays this."],
-                              "'dl [video link]'": ["Currently disabled", "Download the audio of a youtube video."]}
+                              "'kommands'": ["Displays this."]}
 
     def key_test(self, event):
         """Test some key presses from the board of keys."""
@@ -103,61 +95,29 @@ class TEXIOTY(LabelFrame):
                              "                       └┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┘",
                              "One of the first things you should notice are the four sections of \n"
                              "the window, these are the tuls you can use to make masterpieces.", ""]
-        artay_help_list_strings = ["                    ╪aRtay╪",
-                                   "                    └┴┴┴┴┴┘",
-                                   "A tray of art contains an array of art styles.", ""]
         texioty_help_list_strings = ["                    ╪Texioty╪",
                                      "                    └┴┴┴┴┴┴┴┘",
                                      "Texioty is all about processing commands and displaying information.", ""]
         idutc_help_list_strings = ["                    ╪idutc╪",
                                    "                    └┴┴┴┴┴┘",
                                    "The idutc is a combination of an id and a utc.", ""]
-        kinvow_help_list_strings = ["                    ╪Kinvow╪",
-                                    "                    └┴┴┴┴┴┴┘",
-                                    "A window can be a canvas, too much use and it'll be a door.", ""]
         welcoming_help_strings = {
             "opening": help_list_strings,
-            "aRtay": artay_help_list_strings,
             "Texioty": texioty_help_list_strings,
-            "idutc": idutc_help_list_strings,
-            "Kinvow": kinvow_help_list_strings
+            "idutc": idutc_help_list_strings
         }
         print(tul_section)
         tul_help_dict = {
-            "aRtay": ["Top-left tul, derives from 'art' and 'tray'",
-                      "It contains tabs labeled 'Glyth', 'Glyph', 'Wordie' and so on.",
-                      "These tabs are art-styles and each have different options.",
-                      "Different outcomes will occur, based on your choices."],
-            "Texioty": ["Bottom-left tul, derives from 'text' and 'IO'",
+            "Texioty": ["Bottom tul, derives from 'text' and 'IO'",
                         "The green box is used for textual input.",
                         "The blue box is used for textual output.",
                         "For a list of commands, use the 'kommands' command."],
-            "idutc": ["Top-right tul, derives from 'id' and 'utc'",
+            "idutc": ["Top tul, derives from 'id' and 'utc'",
                       "Source and keywords dictate creation and whatnot.",
                       "You can type many letters and numbers in the yellow box.",
-                      "In the red box you can type a 10-digit number."],
-            "Kinvow": ["Bottom-right tul, derives from 'canvas' and 'window'",
-                       "Creates an image based on the Texioty command used.",
-                       "The command decides which art-styles to use.",
-                       "The art-styles decide how to use the idutc."],
-        }
-        artay_help_dict = {
-            "Art Styles": ["Glyth - Lines, points and shapes of colors and stuff.",
-                           "Glyph - Basically the same as a Glyth, just in a grid.",
-                           "Wordie - Word gayms of puzzles with stories with words.",
-                           "Spirite - A sprite with spirit for gayms to use as assets.",
-                           "Recipe - Recipes help you cook good food, better.",
-                           "Foto - Make a foto out of photos and maths.",
-                           "Mujic - Music with a pinch of magic.",
-                           "Gaym - Games with mixed up logic and spirites.",
-                           "Meem - Memes of originality mixed with reposts."]
-
+                      "In the red box you can type a 10-digit number."]
         }
         texioty_help_dict = {
-            "kre8": ["You can use multiple art styles in the same kre8 kommand.",
-                     "Separate which art styles to use with a space.",
-                     "First style typed will be first created on the kinvow.",
-                     "kre8 glyph glyth", "kre8 glyth mujic", "kre8 foto recipe", "kre8 glyph spirite"],
             "dear_sys,": ["This will start diary mode, anything typed will be saved.",
                           "It will still accept kommands while in diary mode.",
                           "Entries will be jumbled in Texioty for some privacy.",
@@ -175,15 +135,10 @@ class TEXIOTY(LabelFrame):
                          "Crayon/Pen - Determines accuracy of colors and lines."]
 
         }
-        kinvow_help_dict = {
-
-        }
         help_dict = {
             "opening": tul_help_dict,
-            "aRtay": artay_help_dict,
             "Texioty": texioty_help_dict,
-            "idutc": idutc_help_dict,
-            "Kinvow": kinvow_help_dict
+            "idutc": idutc_help_dict
         }
         for help_str in welcoming_help_strings[tul_section]:
             self.priont_string(help_str)
@@ -221,6 +176,9 @@ class TEXIOTY(LabelFrame):
         # GET INPUT AND SPLIT IT INTO A LIST
         text_input = self.input_str_var.get()
         self.input_list = text_input.split()
+
+        if self.isHangman:
+            pass
 
         if self.isDiary:
             self.diarySentenceList.append(timestamp_line_entry(datetime.now(), text_input,
@@ -266,11 +224,40 @@ class TEXIOTY(LabelFrame):
         # PRINT A RANDOMLY GENERATED SENTENCE
         if self.input_list[0] == "RSG":
             self.clear_texoty()
-            self.make_random_sentence()
+            self.priont_string(wordie.generate_madlib_sentence(random.choice(["kicked", "threw up on", "jumped over",
+                                                                              "can deliver", "shot guns at", "tackled",
+                                                                              "stole", "built"]), self.IDUTC_frame.kre8dict))
 
         if self.input_list[0] == "madlib":
             self.clear_texoty()
             self.start_madlib_story()
+
+        if self.input_list[0] == "start":
+            self.clear_texoty()
+            if self.input_list[1] == "hangman":
+                self.hidden_hangman_phrase = self.start_hangman_mode()
+                self.priont_string(wordie.HANGMAN_TEXTMAN_LIST[0])
+                self.priont_string(wordie.dict_to_str(self.hidden_hangman_phrase))
+                self.priont_string("Missed letters-|")
+            elif self.input_list[1] == "hilo":
+                pass
+
+        if self.input_list[0] == "end":
+            if self.input_list[1] == "hangman":
+                self.priont_string("Thank you for playing!")
+                self.isHangman = False
+
+        if self.input_list[0] == "guess" and self.isHangman:
+            self.hidden_hangman_phrase, self.missed_hangman_letters = wordie.check_hangman_letter(self.input_list[1],
+                                                                                                  self.hangman_phrase,
+                                                                                                  self.hidden_hangman_phrase,
+                                                                                                  self.missed_hangman_letters)
+            self.clear_texoty()
+            self.priont_string(wordie.HANGMAN_TEXTMAN_LIST[len(self.missed_hangman_letters)])
+            self.priont_string(wordie.dict_to_str(self.hidden_hangman_phrase))
+            self.priont_string("Missed letters-|")
+            self.priont_list("Missed letters-|", self.missed_hangman_letters)
+            print(self.missed_hangman_letters)
 
         # ENTER DIARY MODE
         if self.input_list[0] == "dear_sys,":
@@ -366,6 +353,31 @@ class TEXIOTY(LabelFrame):
         leading_spaces = " " * len(key_of_int)
         self.priont_string(f'{leading_spaces}└{iont}')
 
+    def start_hangman_mode(self) -> dict:
+        self.isHangman = True
+        return self.reset_hidden_phrase()
+
+    def reset_hidden_phrase(self):
+        self.missed_hangman_letters = []
+        self.hangman_phrase = random.choice(wordie.HANGMAN_PHRASES)
+        self.hidden_hangman_phrase = {}
+        hidden_c = "-"
+        for c in self.hangman_phrase:
+            for i in range(15):
+                if c in self.hidden_hangman_phrase:
+                    c += c[0]
+            self.hidden_hangman_phrase[c] = "◙"
+            if c[0] in " ,.?!":
+                self.hidden_hangman_phrase[c] = c[0]
+            else:
+                self.hidden_hangman_phrase[c] = "◙"
+        for key in self.hidden_hangman_phrase:
+            print(f"{key}: {self.hidden_hangman_phrase[key]}")
+        return self.hidden_hangman_phrase
+
+    def end_hangman_mode(self):
+        self.isHangman = False
+
     def start_diary_mode(self) -> datetime:
         """Start a diary entry."""
         start_now = datetime.now()
@@ -396,7 +408,7 @@ class TEXIOTY(LabelFrame):
         self.priont_dict(self.commands_dict)
 
     def make_random_sentence(self):
-        subject = random.choice(["A full grown clown-adult", "A scary robot", "Superman", "My 9th grade English teacher",
+        subject = random.choice(["A fully grown adult clown", "A scary robot", "Superman", "My 9th grade English teacher",
                                  "The local veterinary", "The next door neighbor", "The slowest firefighter", "Jeremy"])
         action = random.choice(["kicked", "jumped over", "stole", "made a sandwich with", "smoked something with",
                                 "got too drunk with", "couldn't find", "made the dumbest face at"])

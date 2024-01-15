@@ -588,12 +588,6 @@ PUNCTUATION_WORD_LISTS = {
 }
 
 ALPHANUMERIC_WORD_LISTS = {
-    ",": ["comma", "coma", "kona", "players", "right", "turtle", "look", "please", "feel", "less"],
-    "'": ["apostrophe", "trophy", "post", "apostle", "hustle", "bussin", "combine", "pretty", "if", "you"],
-    " ": ["space", "blank", "empty", "nope", "paris", "almost", "copper", "whole", "world", "ice"],
-    ":": ["colon", "dots", "top", "heart", "frankfurt", "star", "silver", "try", "too", "hard"],
-    "-": ["dash", "lined", "middle", "zip", "greenville", "half", "fake", "get", "my", "hair"],
-    "_": ["under", "line", "bottom", "score", "moscow", "over", "gold", "why", "do", "I"],
     "0": ["zero", "none", "hero", "villain", "beijing", "eye", "platinum", "yeah", "baby", "ever"],
     "1": ["one", "lonely", "win", "juan", "tokyo", "hand", "sapphire", "run", "the", "jewels"],
     "2": ["two", "too", "lose", "to", "madagascar", "foot", "emerald", "render", "final", "fantasy"],
@@ -631,6 +625,46 @@ ALPHANUMERIC_WORD_LISTS = {
     "y": ["yankee", "yelled", "yip", "yuck", "yakima", "yarn", "yellow", "yak", "yam", "yup"],
     "z": ["zulu", "zebra", "zoinks", "zealand", "zhengzhou", "zombie", "zaffre", "zebra", "zucchini", "zoom"]
 }
+
+ANOTHER_WORD_LISTS = {
+    "0": ["zero", "Luna", "bed", "smelly", "beijing", "dog", "LeBron James", "alpaca", "pizza", "unicycle"],
+    "1": ["one", "Hallow", "couch", "brave", "tokyo", "tree", "Michael Jordan", "skunk", "spaghetti", "bicycle"],
+    "2": ["two", "Oreo", "chair", "perfect", "madagascar", "ocean", "Chris Farley", "baboon", "cheeseburger", "tricycle"],
+    "3": ["three", "Sunny", "loveseat", "motionless", "chicago", "book", "Bob Marley", "spider", "corn-cob", "four-wheeler"],
+    "4": ["four", "Trigger", "recliner", "petite", "seattle", "chair", "Gene Simmons", "narwhal", "lasagna", "tank"],
+    "5": ["five", "Frick", "table", "clean", "miami", "car", "Your mom", "tiger", "bread", "semi-truck"],
+    "6": ["six", "Frack", "side-table", "colorful", "detroit", "sky", "my 7th grade math teacher", "crab", "crab-legs", "clown car"],
+    "7": ["seven", "Butterscotch", "desk", "helpful", "mesa", "computer", "the mailman", "chicken", "dumplings", "hang-glider"],
+    "8": ["eight", "Caramel", "end-table", "eager", "youngstown", "moon", "the darkest policeman", "cow", "chimichanga", "dirt-bike"],
+    "9": ["nine", "Toffee", "bar-stool", "hilarious", "akron", "guitar", "your grandpa", "salamander", "rice", "motor-cycle"],
+    "a": ["ten", "Sergent", "fireplace", "happy", "atlanta", "coffee", "amber", "the slowest kid", "apple", "acura"],
+    "b": ["eleven", "Wolfie", "lamp", "muddy", "buffalo", "flower", "the bus driver", "bat", "broccoli", "bently"],
+    "c": ["twelve", "Blue", "ottoman", "lovely", "cleveland", "mountain", "the entire marching band", "cat", "cauliflower", "car"],
+    "d": ["thirteen", "Mila", "rug", "poor", "denver", "river", "God's dumbest nephew", "dog", "dragonfruit", "dodge"],
+    "e": ["fourteen", "Church", "lawn chair", "stupid", "ellensburg", "sun", "the local veterinary", "elephant", "eggplant", "elantra"],
+    "f": ["fifteen", "Kora", "patio table", "successful", "flynt", "phone", "the whitest crackhead", "fox", "fennel", "ford"],
+    "g": ["sixteen", "Midnight", "bunk beds", "witty", "georgia", "house", "the grey wizard", "gorilla", "grape", "golfcart"],
+    "h": ["seventeen", "Smokey", "couch-bed", "terrible", "houston", "hat", "the security guard", "hippopotamus", "honeydew", "honda"],
+    "i": ["eighteen", "Oliver", "bean-bag chair", "upset", "idaho", "beach", "that scary clown", "iguana", "iceberg", "train"],
+    "j": ["twenty-one", "Bruiser", "vanity dresser", "lazy", "jamestown", "cloud", "this scraggly cat", "jaguar", "jalapenos", "jetplane"],
+    "k": ["fourty-five", "Maxwell", "dresser", "light", "kentucky", "key", "that homeless man", "kangaroo", "kale", "kayak"],
+    "l": ["sixty-nine", "Fred", "bench", "horrible", "london", "fish", "any of the spice girls", "llama", "legumes", "lincoln"],
+    "m": ["one hundred", "Tucker", "cot", "healthy", "massachusetts", "elephant", "Bozo the clown", "monkey", "mushroom", "minivan"],
+    "n": ["fifty-two", "Snowball", "lamp", "pleasant", "nashville", "pizza", "Dumbo the janitor", "newt", "napa", "nissan"],
+    "o": ["sixty-four", "Henry", "mirror", "proud", "oakland", "friend", "Bert Reynolds", "orangutan", "orange", "ferrarri"],
+    "p": ["eighty-eight", "Toby", "curtain-rod", "prickly", "philadelphia", "camera", "Ryan Reynolds", "platypus", "potato", "bus"],
+    "q": ["thirty-nine", "Pearl", "pillow", "selfish", "queens", "clock", "Morgan Freeman", "quail", "quinoa", "truck"],
+    "r": ["fifteen and a half", "Panther", "dog bed", "putrid", "reno", "butterfly", "the last person in line", "rhinoceros", "radish", "boat"],
+    "s": ["eighteen and a half", "Bailey", "table-chair", "sleepy", "scranton", "bridge", "that ginger zookeeper", "snake", "spinach", "hot-air balloon"],
+    "t": ["thirty-seven", "Ivy", "stove", "strange", "tuscaloosa", "pen", "this mexican gardner", "turkey", "taro", "trolly"],
+    "u": ["twenty-two and a half", "Astrid", "refrigerator", "wild", "ukraine", "salad", "your mom's cousin's brother's nephew's best friend", "unicorn", "ugli", "taxi"],
+    "v": ["two-thirds", "Lemiwinks", "sink", "annoying", "vienna", "mirror", "a mermaid", "vulture", "vanilla", "van"],
+    "w": ["one hundred thirty-one", "Bear", "cupboard", "beautiful", "wuhan", "rainbow", "The hulk and his sister", "whale", "watermelon", "raft"],
+    "x": ["one-tenth", "Penny", "dinner-table", "clumsy", "xi'an", "wallet", "Walter Bishop", "xenops", "ximenia", "submarine"],
+    "y": ["ninety-nine", "Frow Frow", "counter-top", "colorful", "yakima", "dungeon", "Ash Ketchem", "yak", "yam", "lawnmower"],
+    "z": ["fourty-four", "Peanut", "table-chair", "crazy", "zhengzhou", "attic", "your stoned roommate", "zebra", "zucchini", "zipline"]
+}
+
 
 # _.+-=/
 ALPHANUMERIC_NOTE_PATTERNS = {
