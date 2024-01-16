@@ -6,10 +6,12 @@ import uu
 from PIL import Image, ImageDraw, ImageFont
 
 from settings import *
-ttf = ImageFont.truetype('emonob.ttf', 22)
 
-HANGMAN_PHRASES = ["The quick brown fox jumped over the lazy dog.", "If you guess the letter Q, I win.",
-                   "Why did the chicken cross the road?", "How much wood would a woodchuck, chuck. If a woodchuck could chuck wood?"
+HANGMAN_PHRASES = ["The quick brown fox jumps over the lazy dog.",
+                   f"If you guess the letter {random.choice(['Q', 'J', 'X', 'Z'])}, I win.",
+                   "Why did the chicken cross the playground? To get to the other slide!",
+                   "How much wood would a woodchuck chuck, if a woodchuck could chuck wood?",
+                   "A woodchuck would chuck as much wood as a woodchuck could chuck wood."
                    ]
 
 HANGMAN_TEXTMAN_LIST = ["  ╔═════╕   \n"
@@ -106,20 +108,20 @@ def generate_madlib_sentence(action: str, kre8dict: dict) -> str:
     print(send_sent[-2:])
     if send_sent[-2:] == ", ":
         send_sent += f"{time_prepword} {pet_name.title()} the {animal} ate {food}s in {location}{random.choice(['.', '!'])}"
+    send_sent += f" The {noun} landed {space_prepword} the {furniture}."
     return send_sent
 
 
-def dict_to_str(kre8dict: dict) -> str:
-    hidden_word_dict = kre8dict
+def dict_to_str(hidden_phrase_dict: dict) -> str:
     hidden_word_str = ""
-    for c in hidden_word_dict:
-        hidden_word_str += hidden_word_dict[c]
+    for c in hidden_phrase_dict:
+        hidden_word_str += hidden_phrase_dict[c]
     return hidden_word_str
 
 
 def check_hangman_letter(letter_to_check: str, chosen_phrase: str, hidden_phrase: dict, missed_letters: list) -> (dict, list):
     if letter_to_check in chosen_phrase:
-        for i in range(len(chosen_phrase.lower())):
+        for i in range(len(chosen_phrase)):
             if letter_to_check*(i+1) in hidden_phrase:
                 if hidden_phrase[letter_to_check*(i+1)] == "◙":
                     hidden_phrase[letter_to_check*(i+1)] = f'{letter_to_check}'

@@ -97,6 +97,9 @@ class IDUTC(tk.LabelFrame):
         save_folder = self.kre8dict["data_source"]
         dumpDict = self.kre8dict
         print(dumpDict)
+        dumpDict["royalty_percentage"] = 3
+        dumpDict["image"] = "ipfs://"
+        dumpDict["animation_url"] = "ipfs://"
         with open(f'JSONs/{save_folder}/{file_name}.json', 'w') as f:
             json.dump(dumpDict, f, indent=4)
 
@@ -159,7 +162,7 @@ class IDUTC(tk.LabelFrame):
                 desc += random.choice(ALPHANUMERIC_WORD_LISTS[c.lower()]) + " "
             else:
                 desc += random.choice(PUNCTUATION_WORD_LISTS[c.lower()]) + " "
-        filename = random.choice(desc.split()[0:2]).title() + "-" + random.choice(desc.split()[2:4]).title() + ", " + random.choice(desc.split()[4:6]).title()
+        filename = random.choice(desc.split()[0:2]).title() + "_" + random.choice(desc.split()[2:4]).title() + "_" + random.choice(desc.split()[4:6]).title()
         KRE8dict = {
             "use_id": use_id,
             "use_utc": use_utc,
@@ -169,10 +172,7 @@ class IDUTC(tk.LabelFrame):
             "name": filename,
             "file_path": f"GLYTH/{self.gather_attributes()[3]}/{filename}.png",
             "artributes": self.gather_attributes(),
-            "royalty_percentage": 3,
-            "description": desc,
-            "image": "ipfs://",
-            "animation_url": "ipfs://"
+            "description": desc
         }
         return KRE8dict
 
@@ -212,20 +212,20 @@ def add_data_source_dict(use_data: dict):
         use_data["item_info"] = []
 
 
-def setupKRE8dict(use_id: str, use_utc: str, data_source: str) -> dict:
-    """
-    Sets up the initial KRE8shun dictionary.
-    """
-    number_list = new_number_list(use_utc)
-    number_list.sort()
-    filename = f"{use_id}_{use_utc}_{datetime.datetime.now().microsecond}"
-    KRE8dict = {
-        "use_id": use_id,
-        "use_utc": use_utc,
-        "color_list": new_color_list(use_id),
-        "number_list": number_list,
-        "data_source": data_source,
-        "name": filename,
-        "artributes": ["Window", "Rainbow", "Fire", "Dog", "Sock", "Pen"]
-    }
-    return KRE8dict
+# def setupKRE8dict(use_id: str, use_utc: str, data_source: str) -> dict:
+#     """
+#     Sets up the initial KRE8shun dictionary.
+#     """
+#     number_list = new_number_list(use_utc)
+#     number_list.sort()
+#     filename = f"{use_id}_{use_utc}_{datetime.datetime.now().microsecond}"
+#     KRE8dict = {
+#         "use_id": use_id,
+#         "use_utc": use_utc,
+#         "color_list": new_color_list(use_id),
+#         "number_list": number_list,
+#         "data_source": data_source,
+#         "name": filename,
+#         "artributes": ["Window", "Rainbow", "Fire", "Dog", "Sock", "Pen"]
+#     }
+#     return KRE8dict

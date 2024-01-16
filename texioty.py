@@ -19,7 +19,6 @@ headers = {
 textbox_width = 88
 
 
-
 class TEXIOTY(LabelFrame):
     def __init__(self, master=None, IDUTC=None):
         """
@@ -56,7 +55,11 @@ class TEXIOTY(LabelFrame):
         # DIFFERENT MODES TO BE ENABLED AND DISABLED
         self.isTestingKeys = False
         self.isDiary = False
+
         self.isHiLo = False
+        self.hilo_number = 12
+        self.hilo_guesses = 0
+
         self.diary_line_length = 75
         self.diarySentenceList = []
         self.prev_kommand_list = []
@@ -79,7 +82,8 @@ class TEXIOTY(LabelFrame):
                                               "Anything typed will be added to a diary entry."],
                               "'/until_next_time'": ["Exits diary mode.", "Saves the entry into the .diary folder."],
                               "'help'": ["Displays some help about the program itself."],
-                              "'kommands'": ["Displays this."]}
+                              "'kommands'": ["Displays this."],
+                              "'start (hangman, hilo)'": ["Start a hangman or a hilo game."]}
 
     def key_test(self, event):
         """Test some key presses from the board of keys."""
@@ -178,7 +182,36 @@ class TEXIOTY(LabelFrame):
         self.input_list = text_input.split()
 
         if self.isHangman:
-            pass
+            if self.input_list[0] == "guess" and len(self.missed_hangman_letters) < 6:
+                self.hidden_hangman_phrase, self.missed_hangman_letters = wordie.check_hangman_letter(self.input_list[1],
+                                                                                                      self.hangman_phrase,
+                                                                                                      self.hidden_hangman_phrase,
+                                                                                                      self.missed_hangman_letters)
+                self.clear_texoty()
+                self.priont_string(wordie.HANGMAN_TEXTMAN_LIST[len(self.missed_hangman_letters)])
+                self.priont_string(wordie.dict_to_str(self.hidden_hangman_phrase))
+                self.priont_string("Missed letters┐")
+                self.priont_list("Missed letters", self.missed_hangman_letters)
+
+            elif len(self.input_list[1]) > 1 and self.input_list[0] == "guess":
+                self.priont_string("Too many letters, only one at a time, please.")
+
+            else:
+                self.priont_string("No more guesses!")
+                self.end_hangman_mode()
+
+        if self.isHiLo:
+            if self.input_list[0] == "guess":
+                guess_num = int(self.input_list[1])
+                self.hilo_guesses += 1
+                if guess_num > self.hilo_number:
+                    self.priont_string("too big")
+                elif guess_num < self.hilo_number:
+                    self.priont_string("too small")
+                elif guess_num == self.hilo_number:
+                    self.priont_string("just right")
+                    self.priont_string(f"You guessed correctly with {self.hilo_guesses} attempts.")
+                    self.end_hilo_mode()
 
         if self.isDiary:
             self.diarySentenceList.append(timestamp_line_entry(datetime.now(), text_input,
@@ -238,26 +271,17 @@ class TEXIOTY(LabelFrame):
                 self.hidden_hangman_phrase = self.start_hangman_mode()
                 self.priont_string(wordie.HANGMAN_TEXTMAN_LIST[0])
                 self.priont_string(wordie.dict_to_str(self.hidden_hangman_phrase))
-                self.priont_string("Missed letters-|")
+                self.priont_string("Missed letters┐")
             elif self.input_list[1] == "hilo":
-                pass
+                self.hilo_number = self.start_hilo_mode()
+                self.priont_string("Guess a number between: 0 and 99")
 
         if self.input_list[0] == "end":
             if self.input_list[1] == "hangman":
+                self.priont_string(wordie.dict_to_str(self.hidden_hangman_phrase))
+                self.priont_string(self.hangman_phrase)
                 self.priont_string("Thank you for playing!")
                 self.isHangman = False
-
-        if self.input_list[0] == "guess" and self.isHangman:
-            self.hidden_hangman_phrase, self.missed_hangman_letters = wordie.check_hangman_letter(self.input_list[1],
-                                                                                                  self.hangman_phrase,
-                                                                                                  self.hidden_hangman_phrase,
-                                                                                                  self.missed_hangman_letters)
-            self.clear_texoty()
-            self.priont_string(wordie.HANGMAN_TEXTMAN_LIST[len(self.missed_hangman_letters)])
-            self.priont_string(wordie.dict_to_str(self.hidden_hangman_phrase))
-            self.priont_string("Missed letters-|")
-            self.priont_list("Missed letters-|", self.missed_hangman_letters)
-            print(self.missed_hangman_letters)
 
         # ENTER DIARY MODE
         if self.input_list[0] == "dear_sys,":
@@ -278,6 +302,9 @@ class TEXIOTY(LabelFrame):
             self.priont_dict(kre8dict)
 
         self.input_str_var.set("")
+        if self.isHangman or self.isHiLo:
+            self.input_str_var.set("guess ")
+            self.texity.icursor(END)
 
     def print_to_texoty(self, string_to_display: str, font_color='blue'):
         self.texoty.configure(fg=font_color)
@@ -355,6 +382,7 @@ class TEXIOTY(LabelFrame):
 
     def start_hangman_mode(self) -> dict:
         self.isHangman = True
+        self.configure(text=f'Texioty: Hangman')
         return self.reset_hidden_phrase()
 
     def reset_hidden_phrase(self):
@@ -363,7 +391,7 @@ class TEXIOTY(LabelFrame):
         self.hidden_hangman_phrase = {}
         hidden_c = "-"
         for c in self.hangman_phrase:
-            for i in range(15):
+            for i in range(len(self.hangman_phrase)):
                 if c in self.hidden_hangman_phrase:
                     c += c[0]
             self.hidden_hangman_phrase[c] = "◙"
@@ -376,7 +404,19 @@ class TEXIOTY(LabelFrame):
         return self.hidden_hangman_phrase
 
     def end_hangman_mode(self):
+        self.clear_texoty()
         self.isHangman = False
+        self.configure(text=f'Texioty:')
+
+    def start_hilo_mode(self) -> int:
+        self.isHiLo = True
+        random_number = random.randint(0, 99)
+        self.configure(text=f'Texioty: HiLo')
+        return random_number
+
+    def end_hilo_mode(self):
+        self.isHiLo = False
+        self.configure(text=f'Texioty:')
 
     def start_diary_mode(self) -> datetime:
         """Start a diary entry."""
@@ -384,6 +424,7 @@ class TEXIOTY(LabelFrame):
         self.isDiary = True
         self.priont_string(f"-Entering diary mode-   {start_now}")
         self.diarySentenceList = []
+        self.configure(text=f'Texioty: Digiary')
         return start_now
 
     def stop_diary_mode(self) -> datetime:
@@ -391,6 +432,7 @@ class TEXIOTY(LabelFrame):
         end_now = datetime.now()
         self.isDiary = False
         self.priont_string(f"-Exiting diary mode-   {end_now}")
+        self.configure(text=f'Texioty:')
         return end_now
 
     def find_loopring_account(self, address: str) -> dict:

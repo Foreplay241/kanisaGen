@@ -1,0 +1,63 @@
+{
+    "use_id": "wrqg43",
+    "use_utc": "3469527833",
+    "color_list": [
+        [
+            65,
+            105,
+            225
+        ],
+        [
+            34,
+            139,
+            34
+        ],
+        [
+            221,
+            160,
+            221
+        ],
+        [
+            133,
+            99,
+            99
+        ],
+        [
+            245,
+            255,
+            250
+        ],
+        [
+            74,
+            118,
+            110
+        ]
+    ],
+    "number_list": [
+        2,
+        3,
+        3,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "data_source": "Random",
+    "name": "Wise-Quail, Three",
+    "file_path": "GLYTH/Dog/Wise-Quail, Three.png",
+    "artributes": [
+        "Door",
+        "Rainbow",
+        "Fire",
+        "Dog",
+        "Rock",
+        "Pen"
+    ],
+    "description": "wise ranch quail golf now three ",
+    "royalty_percentage": 3,
+    "image": "ipfs://",
+    "animation_url": "ipfs://"
+}

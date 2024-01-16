@@ -1,6 +1,5 @@
 import random
 import praw
-#import asyncpraw
 
 reddit: praw.Reddit = praw.Reddit(
     client_id="9EXDeyozdzMuhb1COAqnpQ",
@@ -9,13 +8,6 @@ reddit: praw.Reddit = praw.Reddit(
     username="Camel-of_Chicken",
     password="Thisn0tThepass"
 )
-#asyncreddit: asyncpraw.Reddit = asyncpraw.Reddit(
-#    client_id="9EXDeyozdzMuhb1COAqnpQ",
-#    client_secret="dU1J0681cmtNo2Pkx9JAgK9uMxgqNA",
-#    user_agent="Test app for camels and chickens by u/Camel-of_Chicken",
-#    username="Camel-of_Chicken",
-#    password="Thisn0tThepass"
-#)
 
 TEXT_ONLY_SUBREDDITS: list = ["TalesFromTechSupport", "TalesFromThePizzaGuy", "TalesFromRetail", "LifeOfNorman",
                               "PettyRevenge"]
@@ -49,12 +41,3 @@ def create_IDUTC() -> (str, str):
     use_id = picked_submission.id
     use_utc = int(picked_submission.created_utc)
     return use_id, use_utc
-
-
-async def create_async_IDUTC() -> (str, str):
-    """Picks a random submission from a subreddit and returns an idutc tuple."""
-    chosen_subreddit = await asyncreddit.subreddit(random.choice(TEXT_ONLY_SUBREDDITS))
-    picked_submission = await chosen_subreddit.random()
-    useID = picked_submission.id
-    useUTC = int(picked_submission.created_utc)
-    return useID, useUTC
