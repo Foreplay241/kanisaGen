@@ -327,6 +327,8 @@ class TEXIOTY(LabelFrame):
             # If there is a dioct_name, there is an inner dictionary.
             if dioct_name:
                 lead_space = " " * (len(dioct_name) - 1)
+                if dioct2_name:
+                    lead_space += " " * (len(dioct2_name) - 1)
                 self.priont_string(f'{lead_space}└{key}┐')
             else:
                 self.priont_string(f'{key}┐')
@@ -385,7 +387,7 @@ class TEXIOTY(LabelFrame):
         self.configure(text=f'Texioty: Hangman')
         return self.reset_hidden_phrase()
 
-    def reset_hidden_phrase(self):
+    def reset_hidden_phrase(self) -> dict:
         self.missed_hangman_letters = []
         self.hangman_phrase = random.choice(wordie.HANGMAN_PHRASES)
         self.hidden_hangman_phrase = {}
@@ -416,6 +418,7 @@ class TEXIOTY(LabelFrame):
 
     def end_hilo_mode(self):
         self.isHiLo = False
+        self.hilo_guesses = 0
         self.configure(text=f'Texioty:')
 
     def start_diary_mode(self) -> datetime:

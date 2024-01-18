@@ -20,8 +20,9 @@ subreddit = reddit.subreddit("superstonk")
 submission = subreddit.random()
 
 
-def new_chosen_submission(submis) -> dict:
+def new_chosen_submission(submis_id) -> dict:
     """Return an info dictionary of a chosen submission from reddit."""
+    submis = reddit.submission(id=submis_id)
     submission_info_dict = {
         'id': submis.id,
         'title': submis.title,
