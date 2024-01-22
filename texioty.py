@@ -301,6 +301,14 @@ class TEXIOTY(LabelFrame):
             kre8dict = self.IDUTC_frame.kre8dict
             self.priont_dict(kre8dict)
 
+        if self.input_list[0] == "wut":
+            weird_chars = ["╁╂╃╀╄╅╆╇╈╉╊╋"]
+            for l in range(69):
+                weird_sent = ""
+                for i in range(80):
+                    weird_sent += random.choice(weird_chars)
+                self.priont_string(weird_sent)
+
         self.input_str_var.set("")
         if self.isHangman or self.isHiLo:
             self.input_str_var.set("guess ")
