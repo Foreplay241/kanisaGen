@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[KanisaVault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>KanisaVault</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 10 Jan 2025 19:02:22 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 10 Jan 2025 19:02:13 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Foto Idea]]></title><description><![CDATA[ 
+ <br>A Foto is when you combine any two images you can supply, from the internet or locally or from within Kanisa Generator itself.<br>Color Filters:<br>
+RGB Filter<br>
+Red value slider<br>
+Green value slider<br>
+Blue value slider<br>
+HSB Filter<br>
+Hue value slider<br>
+Saturation value slider<br>
+Brightness value slider<br>
+<br>
+Manipulation<br>
+Shuffle - textbox for grid size<br>
+Rotate - textbox and/or slider for rotation<br>
+Skew - four textbox representing each corner<br>
+Flip Horizontal - checkmark button<br>
+Flip Vertical - checkmark button<br>
+<br>
+Advanced Filters<br>
+Blur - checkmark button<br>
+Emboss - checkmark button<br>
+Sharpen - checkmark button<br>
+Detect Edge - checkmark button<br>fotoRen will be designed to accept 2 images from local, WEB2 or WEB3 sources. After setting the options a person desires or pressing the randomize button, the renderer will merge the two images and then apply any filters and/or shuffles.<br>The current Foto options are:<br>
+<a data-href="Foto Options" href="artyles\foto\foto-options.html" class="internal-link" target="_self" rel="noopener nofollow">Foto Options</a>]]></description><link>artyles\foto\foto-idea.html</link><guid isPermaLink="false">Artyles/Foto/Foto Idea.md</guid><pubDate>Tue, 07 Jan 2025 19:17:37 GMT</pubDate></item><item><title><![CDATA[Foto Options]]></title><description><![CDATA[ 
+ <br>
+<br>Coloring Filters
+
+<br>RGB Filter
+<br>HSB Filter
+
+
+<br>Manipulation
+
+<br>Shuffle
+<br>Rotate
+<br>Skew
+<br>Flip Horizontal
+<br>Flip Vertical
+
+
+<br>Advanced Filters
+
+<br>Blur
+<br>Emboss
+<br>Sharpen
+<br>Detect Edge
+
+
+<br> will provide sliders, buttons, checkmark buttons, radio buttons and all sorts of other gadgets and input methods to decide how to change the Foto. The <a data-href="Foto Idea" href="artyles\foto\foto-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Foto Idea</a> is considering that 2 can be the same as one, with or without filtration and manipulation.]]></description><link>artyles\foto\foto-options.html</link><guid isPermaLink="false">Artyles/Foto/Foto Options.md</guid><pubDate>Wed, 08 Jan 2025 20:25:01 GMT</pubDate></item><item><title><![CDATA[Gaym Idea]]></title><description><![CDATA[ 
+ <br>This will provide an environment and intake a number of <a data-tooltip-position="top" aria-label="Spirite Idea" data-href="Spirite Idea" href="artyles\spirite\spirite-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Spirites</a> for keyboard/mouse interaction. Splitting a game style like a platformer or tower defense into it's main components of gameplay, there is a way to mix and adjust and add or remove interactions and whatnot.<br>There are a couple options to consider for making a Gaym <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a>, either allowing all <a data-href="Artyles" href="artyles\artyles.html" class="internal-link" target="_self" rel="noopener nofollow">Artyles</a> to be a part of the Gaym environment, or only allowing the Spirites.<br>Or it might be both with each type of generator.<br><br>Since there are two types. But in the generator it is limited more to textual based only for the most part I believe.<br><br><br><br>Building a <a data-tooltip-position="top" aria-label="Spirite Idea" data-href="Spirite Idea" href="artyles\spirite\spirite-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Spirite</a> and then passing it to the Gaym environment sounds best and logical as of now.<br>Current gaym options:<br>
+<a data-href="Gaym Options" href="artyles\gaym\gaym-options.html" class="internal-link" target="_self" rel="noopener nofollow">Gaym Options</a><br><br><br>Each object type will need to be represented by a spirite. Spirites are perfect because there are so many possible combinations and configurations. An easy example would be a SpaceDits Gaym.<br><br>Different gayms will have different object requirements, a bare minimum for SpaceDits would look like this:<br><br>And that's it, you just need two spirites and you can make a game that will be similar to Asteroids on Atari. I guess you could have a space ship racing gaym with just a player (I have more to think about and discover).]]></description><link>artyles\gaym\gaym-idea.html</link><guid isPermaLink="false">Artyles/Gaym/Gaym Idea.md</guid><pubDate>Wed, 08 Jan 2025 22:15:51 GMT</pubDate></item><item><title><![CDATA[Gaym Options]]></title><description><![CDATA[ 
+ <br>Booty defense - tower defense style game<br>
+spaceDits - Space sh'mup<br>
+thurBo - top-down view dungeon crawler<br>
+Othaido - side-scroller platformer<br>
+ABF - all balls fall<br>The <a data-href="Gaym Idea" href="artyles\gaym\gaym-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Gaym Idea</a> is all about putting different things together and hoping for a desired result.]]></description><link>artyles\gaym\gaym-options.html</link><guid isPermaLink="false">Artyles/Gaym/Gaym Options.md</guid><pubDate>Thu, 03 Oct 2024 21:03:01 GMT</pubDate></item><item><title><![CDATA[Glyph Idea]]></title><description><![CDATA[ 
+ <br>I think the original idea was about <a data-tooltip-position="top" aria-label="Glyth Idea" data-href="Glyth Idea" href="artyles\glyth\glyth-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Glyth</a> in a gridded format. Still the same lines and dots colors and shapes, but repeated left/right and up/down. Giving it a form of direction and I believe the idea has evolved in movement and direction.<br><br>Now, there are ways to animate and/or alter a Glyth. Every artyle should be able to interact together, thus <a data-href="Pet Method" href="kanisaren\pet-method.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method</a>s were formed. A way to group and categorize information so that many and any combination of <a data-href="Artyles" href="artyles\artyles.html" class="internal-link" target="_self" rel="noopener nofollow">Artyles</a> can exist.<br>Current glyph options:<br>
+<a data-href="Glyph Options" href="artyles\glyph\glyph-options.html" class="internal-link" target="_self" rel="noopener nofollow">Glyph Options</a>]]></description><link>artyles\glyph\glyph-idea.html</link><guid isPermaLink="false">Artyles/Glyph/Glyph Idea.md</guid><pubDate>Wed, 08 Jan 2025 20:02:03 GMT</pubDate></item><item><title><![CDATA[Glyph Options]]></title><description><![CDATA[ 
+ <br>Round<br>
+Square<br>
+Horizontal<br>
+Vertical<br>
+Slant Up<br>
+Slant Down<br>
+Scales<br>
+Snow<br>The <a data-href="Glyph Idea" href="artyles\glyph\glyph-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Glyph Idea</a> is based upon modifying it's other half. (<a data-href="Glyth Idea" href="artyles\glyth\glyth-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Glyth Idea</a> being the other half.)]]></description><link>artyles\glyph\glyph-options.html</link><guid isPermaLink="false">Artyles/Glyph/Glyph Options.md</guid><pubDate>Tue, 07 Jan 2025 23:54:11 GMT</pubDate></item><item><title><![CDATA[Glyth Idea]]></title><description><![CDATA[ 
+ <br>A basic drawing can be started with points, lines, shapes and colors. The options are named after natural occurrences, such as Lightning or Bubble or Ripple. As long as the option can be visually shown on a 2d canvas.<br>A glyth can be viewed as a pattern of lines, shapes, dots and colors. The name of each glyth is named after natural occurrences, such as lightning, ripple, leaf, wave, cloud, wind, stick, and many more. They have to be simple and basic to the various forms. <br><br>Take leaf for example, a leaf is as skinny and long as a blade of grass, with many points like a maple leaf or can be big and fat like a palm leaf. They all do a similar growth pattern, though, start from a point and send lines outward.<br>A cloud can be just dust and water vapor, or it could be more like fog or smog or steam. Just like grass, all clouds are similar in form, just different components. They all have dots and dots and dots of substances.<br>Volcanic ash is too specific of a glyth name, so instead the glyth name would be ash. This would introduce different sized dots from cloud, since ash can be in cloud form it might get complicated.<br>Current Glyth options :<br>
+<a data-href="Glyth Options" href="artyles\glyth\glyth-options.html" class="internal-link" target="_self" rel="noopener nofollow">Glyth Options</a>]]></description><link>artyles\glyth\glyth-idea.html</link><guid isPermaLink="false">Artyles/Glyth/Glyth Idea.md</guid><pubDate>Wed, 08 Jan 2025 20:02:44 GMT</pubDate></item><item><title><![CDATA[Glyth Options]]></title><description><![CDATA[ 
+ <br>Box Lines<br>
+Circle Shapes<br>
+Ripples<br>
+Confetti<br>Lightning<br>
+Spider Web<br>
+Cloud<br>
+Snowflake]]></description><link>artyles\glyth\glyth-options.html</link><guid isPermaLink="false">Artyles/Glyth/Glyth Options.md</guid><pubDate>Wed, 08 Jan 2025 18:41:41 GMT</pubDate></item><item><title><![CDATA[Mujic Idea]]></title><description><![CDATA[ 
+ <br>This will be randomly/procedurally generated noises and sound waves. Plenty of inputs and rhythms to use and change.<br>Music notes can be assigned to different symbols, the main ones to probably use are<br>
+!@#$%^&amp;*()<br>The current available options are:<br><a data-href="Mujic Options" href="artyles\mujic\mujic-options.html" class="internal-link" target="_self" rel="noopener nofollow">Mujic Options</a>]]></description><link>artyles\mujic\mujic-idea.html</link><guid isPermaLink="false">Artyles/Mujic/Mujic Idea.md</guid><pubDate>Thu, 03 Oct 2024 19:29:57 GMT</pubDate></item><item><title><![CDATA[Mujic Options]]></title><description><![CDATA[ 
+ <br>*-++<br>
+/*--+<br>
+**+-+<br>A <a data-href="Mujic Idea" href="artyles\mujic\mujic-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Mujic Idea</a> is timing the right waves and left alone marks.]]></description><link>artyles\mujic\mujic-options.html</link><guid isPermaLink="false">Artyles/Mujic/Mujic Options.md</guid><pubDate>Thu, 03 Oct 2024 21:04:20 GMT</pubDate></item><item><title><![CDATA[Recipe Idea]]></title><description><![CDATA[ 
+ <br>The recipe can be a good one or bad one, logical or incoherent. All that matters is there are ingredients, directions and other information about the recipe.<br>The current recipe options are:<br>
+<a data-href="Recipe Options" href="artyles\recipe\recipe-options.html" class="internal-link" target="_self" rel="noopener nofollow">Recipe Options</a><br>Ingredients
+These are the basic foods and seasonings needed to complete this dish.
+<br>Directions
+These are the steps needing to be performed in order to complete the dish.
+<br>Other
+This is other information about the dish, who created it, if it's in a subgenre or anything else useful for knowing.
+]]></description><link>artyles\recipe\recipe-idea.html</link><guid isPermaLink="false">Artyles/Recipe/Recipe Idea.md</guid><pubDate>Thu, 03 Oct 2024 20:12:37 GMT</pubDate></item><item><title><![CDATA[Recipe Options]]></title><description><![CDATA[ 
+ <br>Casseroles<br>
+Sandwiches<br>
+Desserts<br>
+Soups<br>
+Drinks<br>
+Sauces<br>You will only need one recipe from any category to get the whole category of recipes within a recipe.  As far as a <a data-href="Recipe Idea" href="artyles\recipe\recipe-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Recipe Idea</a> sometimes the ingredients sound unappealing, but with the right directions, anything can be tasty.]]></description><link>artyles\recipe\recipe-options.html</link><guid isPermaLink="false">Artyles/Recipe/Recipe Options.md</guid><pubDate>Tue, 07 Jan 2025 23:53:16 GMT</pubDate></item><item><title><![CDATA[Spirite Idea]]></title><description><![CDATA[ 
+ <br>Spirites are game sprites that can host a spirit and interact with other spirites within a <a data-tooltip-position="top" aria-label="Gaym Idea" data-href="Gaym Idea" href="artyles\gaym\gaym-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Gaym</a>. Not literally, I don't think, that's just the idea if you equate the spirit to structured personality, or something. Every gaym needs a Player, I guess that is where the spirit can come into play.<br>There are two parts to the Spirite, a spirit and a sprite, here's a basic chart of choices:<br><br><br>The spirit is how the <a data-tooltip-position="top" aria-label="Gaym Idea" data-href="Gaym Idea" href="artyles\gaym\gaym-idea.html" class="internal-link" target="_self" rel="noopener nofollow">Gaym</a> object will interact with its environment and the sprite is how the object will appear in the environment. In the below chart, a <a data-href="Kanisa Renderer" href="kanisaren\kanisa-renderer.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Renderer</a> would be able to have 4 different gayms so simply by assigning different sprites to different spirits.<br><br>Sprites are a lot different because they are very much more common. Any object that can be in a gaym would be a sprite, and then a gaym would match the sprite to a spirit and place it inside the environment. The sprites would also give certain abilities and traits to the spirit (while the spirit has a base set of abilities and traits).<br>A Gaym artyle would have available spirit slots and then a set number of gayms to use, in this example chart, it has all spirits except for portal.<br><br>The only spirit that NEEDS to be present is the Player spirit.<br>Spirit requirements
+The only two spirit that need to be present in any gaym is the player and an obstacle. A Gaym environment can only produce what is already in a masterpiece file.
+<br>Sprite requirements
+Every spirit needs a sprite, and each sprite is built from four layers.
+<br>Decide on which gaym to render a spirite for, then which object type and finally which sprite to use.<br>Options are under critical thought, but here's a start:<br>
+<a data-href="Spirite Options" href="artyles\spirite\spirite-options.html" class="internal-link" target="_self" rel="noopener nofollow">Spirite Options</a>]]></description><link>artyles\spirite\spirite-idea.html</link><guid isPermaLink="false">Artyles/Spirite/Spirite Idea.md</guid><pubDate>Wed, 08 Jan 2025 22:15:46 GMT</pubDate></item><item><title><![CDATA[Spirite Options]]></title><description><![CDATA[ 
+ <br>Alien<br>
+Asteroid<br>
+Ship<br>
+Medallion<br>Spirites handles manipulating each layer of the sprite as well as define different variables for the spirit. Handling a Spirite Idea is tricky tricky business, how can a player be any object?]]></description><link>artyles\spirite\spirite-options.html</link><guid isPermaLink="false">Artyles/Spirite/Spirite Options.md</guid><pubDate>Tue, 07 Jan 2025 23:53:33 GMT</pubDate></item><item><title><![CDATA[Wordie Idea]]></title><description><![CDATA[ 
+ <br>Hangman, crosswords, riddles, poems or  haikus. Options are plenty and near between.<br>A wordie will consist of word games, riddles and language puzzles. The key for a wordie is simply wordie <br>
+<br>Hangman
+<br>Crossword
+<br>Word Search
+<br>Mathematical word problems
+<br>Adlibs
+<br>Writing Prompts
+<br>
+<br>The current wordie options are:<br>
+<a data-href="Wordie Options" href="artyles\wordie\wordie-options.html" class="internal-link" target="_self" rel="noopener nofollow">Wordie Options</a><br><br>Generators will be able to intake words from the user to add into a masterpiece file. Should be able to add whole clues/hints for crossword puzzles. Hangman phrases and anything else that you would want a renderer to display.<br><br>A renderer will be able to create sensical and nonsensical random sentences. These sentences could then be used for hangman phrases and mad libs or crossword hints.]]></description><link>artyles\wordie\wordie-idea.html</link><guid isPermaLink="false">Artyles/Wordie/Wordie Idea.md</guid><pubDate>Tue, 07 Jan 2025 19:40:13 GMT</pubDate></item><item><title><![CDATA[Wordie Options]]></title><description><![CDATA[ 
+ <br>Hangman<br>
+Collage<br>
+Crossword<br>
+Word Search<br>
+Poem<br>
+Riddle<br>
+Adlibs<br><br>Generators will be able to intake words from the user to add into a masterpiece file. Should be able to add whole clues/hints for crossword puzzles. Hangman phrases and anything else that you would want a renderer to display.<br><br>A renderer will be able to create sensical and nonsensical random sentences. These sentences could then be used for hangman phrases and mad libs or crossword hints.]]></description><link>artyles\wordie\wordie-options.html</link><guid isPermaLink="false">Artyles/Wordie/Wordie Options.md</guid><pubDate>Tue, 07 Jan 2025 19:38:04 GMT</pubDate></item><item><title><![CDATA[Artyles]]></title><description><![CDATA[ 
+ <br>An Artyle is a word smash of Art and Style, it is certain mediums of art with a large range of styles. There are a lot of artistic ways to express art, I can only think of programming, but I'm sure there are more. These are the best ones I could come up with:<br><br>Each name is a key for a <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a> and will contain a dictionary with any possible options and possible choices for each of those options you want a renderer to contain. To do this, you will need to build a bit backwards and decide what kind of renderer you would like to see in the world. They can be built around specific game ideas or a lot of other possible choices I can't think of right now.]]></description><link>artyles\artyles.html</link><guid isPermaLink="false">Artyles/Artyles.md</guid><pubDate>Wed, 08 Jan 2025 18:23:30 GMT</pubDate></item><item><title><![CDATA[aRtay]]></title><description><![CDATA[ 
+ <br>It's an art tray with some switched caps and whatnot. It is mean to hold any <a data-href="Artyles" href="artyles\artyles.html" class="internal-link" target="_self" rel="noopener nofollow">Artyles</a> associated with the masterpiece being used by a <a data-href="Kanisa Generator" href="kanisagen\kanisa-generator.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Generator</a>. Being developed for the <a data-href="Kanisa Project" href="kanisa-project.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Project</a><br>]]></description><link>kanisagen\artay\artay.html</link><guid isPermaLink="false">kanisaGen/aRtay/aRtay.md</guid><pubDate>Sun, 05 Jan 2025 03:38:15 GMT</pubDate></item><item><title><![CDATA[IDUTC]]></title><description><![CDATA[ 
+ <br><br>This is basically the starting point of a <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a>. The color_list is determined from the use_id and much of the generating will come from the use_utc so the IDUTC is key in each masterpiece uniqueness. <br>Most of some parts of configuration will be determined through the use_id and the use_utc. The use_id mostly determines the coloration and artributes associated with the artyle, while the use_utc will be more used in the rendering of the masterpiece through whatever kanisaRen program chosen.<br>In the prototype, these can both be changed at any instance and is useful for testing and using as a first copy. I think that subsequent generators should not be able to change the use_id and be limited on certain numbers for the use_utc.]]></description><link>kanisagen\idutc\idutc.html</link><guid isPermaLink="false">kanisaGen/IDUTC/IDUTC.md</guid><pubDate>Wed, 08 Jan 2025 01:26:04 GMT</pubDate></item><item><title><![CDATA[Kinvow]]></title><description><![CDATA[ 
+ <br>Really straight forward, it displays any visual output. Much like a window. It is used in a <a data-href="Kanisa Generator" href="kanisagen\kanisa-generator.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Generator</a> for previewing what a masterpiece could produce and give it a cover image.<br><br>It allows a generator to view images and other 2D elements, like shapes and colors or something. Before generating a <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a> it might be good to see some of the possibilities in action. It can be used as a small or large widget within the generator.]]></description><link>kanisagen\kinvow\kinvow.html</link><guid isPermaLink="false">kanisaGen/Kinvow/Kinvow.md</guid><pubDate>Wed, 08 Jan 2025 01:26:00 GMT</pubDate></item><item><title><![CDATA[Texioty]]></title><description><![CDATA[ 
+ <br>This is the combination of texity and texoty, a custom Command Line Interface that is being developed for the <a data-href="Kanisa Generator" href="kanisagen\kanisa-generator.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Generator</a>. It is used for adjusting <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a> before creating them.<br><br>Commands are typed into <a data-href="Texity" href="kanisagen\textioty\texity.html" class="internal-link" target="_self" rel="noopener nofollow">Texity</a>, and <a data-href="Texoty" href="kanisagen\textioty\texoty.html" class="internal-link" target="_self" rel="noopener nofollow">Texoty</a> will always have a response. Every generator will have a basic set of commands that can be used, and some masterpiece files will have additional commands.<br>]]></description><link>kanisagen\textioty\texioty.html</link><guid isPermaLink="false">kanisaGen/Textioty/Texioty.md</guid><pubDate>Wed, 08 Jan 2025 00:17:54 GMT</pubDate></item><item><title><![CDATA[Texity]]></title><description><![CDATA[ 
+ <br>Texity is the input half of <a data-href="Texioty" href="kanisagen\textioty\texioty.html" class="internal-link" target="_self" rel="noopener nofollow">Texioty</a>, this is where you can type commands and enter textual content. There are different modes it can be in for different interactions, mostly as follows.<br><br>I added a diary entry mode in honor of my sister, so the command is dear_sys, and anything typed and submitted will be put into a list. Once /until_next_time is executed, it adds that list of entries while in diary mode and exits diary mode.<br><br>Gaym mode consists of playing hangman or blackjack or any other textual based game that can be created. <br><br><a data-href="Texoty" href="kanisagen\textioty\texoty.html" class="internal-link" target="_self" rel="noopener nofollow">Texoty</a> will go through a series of questions and any input from the user will be stored and used for the questionnaires purpose.<br><br>Commands are used for creating on <a data-href="Kinvow" href="kanisagen\kinvow\kinvow.html" class="internal-link" target="_self" rel="noopener nofollow">Kinvow</a> or setting options within the <a data-href="aRtay" href="kanisagen\artay\artay.html" class="internal-link" target="_self" rel="noopener nofollow">aRtay</a>]]></description><link>kanisagen\textioty\texity.html</link><guid isPermaLink="false">kanisaGen/Textioty/Texity.md</guid><pubDate>Wed, 08 Jan 2025 01:25:56 GMT</pubDate></item><item><title><![CDATA[Texoty]]></title><description><![CDATA[ 
+ <br>Texoty is the output half of <a data-href="Texioty" href="kanisagen\textioty\texioty.html" class="internal-link" target="_self" rel="noopener nofollow">Texioty</a>, it displays any textual content. It matched <a data-href="Texity" href="kanisagen\textioty\texity.html" class="internal-link" target="_self" rel="noopener nofollow">Texity</a> in different modes to perfection.<br><br>Any entry from Texity will be shuffled and displayed, this will likely be an option to change if you don't want the shuffling. Once Texity leaves diary mode, Texoty is cleared.<br><br>It displays the HiLo scale or the master password as discovered thus far. If designed correctly can even play battleship or snake maybe even Tetris.<br><br>There should be a way to create questionnaires through Texioty, and even if not, the questions will be predetermined before cloning/creating a new generator.<br><br>Respond to every command from Texity, even if the command is to display something on <a data-href="Kinvow" href="kanisagen\kinvow\kinvow.html" class="internal-link" target="_self" rel="noopener nofollow">Kinvow</a> or change an <a data-href="aRtay" href="kanisagen\artay\artay.html" class="internal-link" target="_self" rel="noopener nofollow">aRtay</a> option. Response is a great way to confirm interaction. ]]></description><link>kanisagen\textioty\texoty.html</link><guid isPermaLink="false">kanisaGen/Textioty/Texoty.md</guid><pubDate>Wed, 08 Jan 2025 01:25:46 GMT</pubDate></item><item><title><![CDATA[Kanisa Generator]]></title><description><![CDATA[ 
+ <br>kanisaGen is just one portion of the <a data-href="Kanisa Project" href="kanisa-project.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Project</a>, it will generate plenty of different masterpieces for a <a data-href="Kanisa Renderer" href="kanisaren\kanisa-renderer.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Renderer</a> to render into a more elaborate art piece, or share some information. This one portion is split into two different types, <a data-href="penGen" href="kanisagen\pengen.html" class="internal-link" target="_self" rel="noopener nofollow">penGen</a> and <a data-href="regGen" href="kanisagen\reggen.html" class="internal-link" target="_self" rel="noopener nofollow">regGen</a>, they are as different as they are the same.<br>This is a python application that will accept different Kanisa Pens, the current limitations are between 2 and 16 pens. In order for a person to create a generator, they will need at least 2 Kanisa Pens. Once they find and/or buy the letters and numbers they would like to use for a use_id, they can take them to a smart contract. The smart contract will accept between 2 and 16 pens and a use_utc (10-digit number).<br>There are four main parts to the generator:<br>
+<br><a data-href="IDUTC" href="kanisagen\idutc\idutc.html" class="internal-link" target="_self" rel="noopener nofollow">IDUTC</a> - deals with the use_id and use_utc keys
+<br><a data-href="aRtay" href="kanisagen\artay\artay.html" class="internal-link" target="_self" rel="noopener nofollow">aRtay</a> - receives input from the user for the Kinvow
+<br><a data-href="Kinvow" href="kanisagen\kinvow\kinvow.html" class="internal-link" target="_self" rel="noopener nofollow">Kinvow</a> - displays aRtay values in the form of their <a data-href="Artyles" href="artyles\artyles.html" class="internal-link" target="_self" rel="noopener nofollow">Artyles</a>
+<br><a data-href="Texioty" href="kanisagen\textioty\texioty.html" class="internal-link" target="_self" rel="noopener nofollow">Texioty</a> - command line for dealing with the whole generator
+<br><br>]]></description><link>kanisagen\kanisa-generator.html</link><guid isPermaLink="false">kanisaGen/Kanisa Generator.md</guid><pubDate>Wed, 08 Jan 2025 22:44:12 GMT</pubDate></item><item><title><![CDATA[penGen]]></title><description><![CDATA[ 
+ <br>This is the mother of all <a data-href="Kanisa Generator" href="kanisagen\kanisa-generator.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Generator</a>s, it has a text box for use_id and use_utc so it is able to make <a data-href="Kanisa Pen" href="kanisapen\kanisa-pen.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Pen</a>s and test any use_id with any use_utc. It is currently in development, meaning it's difficult to continue explaining.<br>There are no use for Artyles in a pen, however a pen should have a small image attached to it for minting. There needs to be some number correlations from Artyle to the use_utc]]></description><link>kanisagen\pengen.html</link><guid isPermaLink="false">kanisaGen/penGen.md</guid><pubDate>Thu, 09 Jan 2025 23:13:30 GMT</pubDate></item><item><title><![CDATA[regGen]]></title><description><![CDATA[ 
+ <br>This type of <a data-href="Kanisa Generator" href="kanisagen\kanisa-generator.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Generator</a> cannot change the <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a> it was created from, it can create new masterpiece files with use_id and use_utc based off the original masterpiece file.]]></description><link>kanisagen\reggen.html</link><guid isPermaLink="false">kanisaGen/regGen.md</guid><pubDate>Wed, 08 Jan 2025 00:59:04 GMT</pubDate></item><item><title><![CDATA[0]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\0-9\0.html</link><guid isPermaLink="false">kanisaPen/0-9/0.md</guid><pubDate>Thu, 03 Oct 2024 20:30:05 GMT</pubDate></item><item><title><![CDATA[1]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\0-9\1.html</link><guid isPermaLink="false">kanisaPen/0-9/1.md</guid><pubDate>Thu, 03 Oct 2024 20:31:20 GMT</pubDate></item><item><title><![CDATA[5]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\0-9\5.html</link><guid isPermaLink="false">kanisaPen/0-9/5.md</guid><pubDate>Thu, 03 Oct 2024 20:31:33 GMT</pubDate></item><item><title><![CDATA[6]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\0-9\6.html</link><guid isPermaLink="false">kanisaPen/0-9/6.md</guid><pubDate>Thu, 03 Oct 2024 20:31:59 GMT</pubDate></item><item><title><![CDATA[a]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\a-z\a.html</link><guid isPermaLink="false">kanisaPen/a-z/a.md</guid><pubDate>Thu, 03 Oct 2024 20:32:27 GMT</pubDate></item><item><title><![CDATA[b]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\a-z\b.html</link><guid isPermaLink="false">kanisaPen/a-z/b.md</guid><pubDate>Thu, 03 Oct 2024 20:32:59 GMT</pubDate></item><item><title><![CDATA[e]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\a-z\e.html</link><guid isPermaLink="false">kanisaPen/a-z/e.md</guid><pubDate>Thu, 03 Oct 2024 20:33:08 GMT</pubDate></item><item><title><![CDATA[f]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\a-z\f.html</link><guid isPermaLink="false">kanisaPen/a-z/f.md</guid><pubDate>Thu, 03 Oct 2024 20:43:57 GMT</pubDate></item><item><title><![CDATA[l]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\a-z\l.html</link><guid isPermaLink="false">kanisaPen/a-z/l.md</guid><pubDate>Thu, 03 Oct 2024 20:33:30 GMT</pubDate></item><item><title><![CDATA[t]]></title><description><![CDATA[ 
+ <br>]]></description><link>kanisapen\a-z\t.html</link><guid isPermaLink="false">kanisaPen/a-z/t.md</guid><pubDate>Thu, 03 Oct 2024 20:33:20 GMT</pubDate></item><item><title><![CDATA[Case of pens]]></title><description><![CDATA[ 
+ <br>Any person with a WEB3 wallet will be able to collect a Kanisa pen, and maybe some day people can create their own pens. Inside the pencil case are some Kanisa pens ready to be made into a generator. <br><a data-href="Glyth Options" href="artyles\glyth\glyth-options.html" class="internal-link" target="_self" rel="noopener nofollow">Glyth Options</a> <br><a data-href="Glyph Options" href="artyles\glyph\glyph-options.html" class="internal-link" target="_self" rel="noopener nofollow">Glyph Options</a> <br><a data-href="Wordie Options" href="artyles\wordie\wordie-options.html" class="internal-link" target="_self" rel="noopener nofollow">Wordie Options</a> <br><a data-href="Foto Options" href="artyles\foto\foto-options.html" class="internal-link" target="_self" rel="noopener nofollow">Foto Options</a> <br><a data-href="Spirite Options" href="artyles\spirite\spirite-options.html" class="internal-link" target="_self" rel="noopener nofollow">Spirite Options</a><br><a data-href="Gaym Options" href="artyles\gaym\gaym-options.html" class="internal-link" target="_self" rel="noopener nofollow">Gaym Options</a><br><a data-href="Mujic Options" href="artyles\mujic\mujic-options.html" class="internal-link" target="_self" rel="noopener nofollow">Mujic Options</a><br><a data-href="Recipe Options" href="artyles\recipe\recipe-options.html" class="internal-link" target="_self" rel="noopener nofollow">Recipe Options</a> ]]></description><link>kanisapen\case-of-pens.html</link><guid isPermaLink="false">kanisaPen/Case of pens.md</guid><pubDate>Tue, 07 Jan 2025 19:32:40 GMT</pubDate></item><item><title><![CDATA[Kanisa Pen]]></title><description><![CDATA[ 
+ <br>A Kanisa Pen is something someone can collect in order to piece together a new <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a>. The masterpiece file can then be used to create a generator token or a renderer token.<br>Each pen is named with a letter of the alphabet, number digit or symbol and will contain a lot of information about generating stuff. A pen can only contain use_id, use_utc, color_list, number_list, and artributes keys.<br><br><br><br><br>So when the Generator is created with an "F-pen", the generator will have options for using "Glyth", "Glyph", and "Recipe". The possibilities column gives all of the possible choices of each artyle, the example column shows what an "F-pen" might actually contain. I will list all currently possible artyles and their options in another section.<br><br>A Pencase holds any <a data-href="Kanisa Pen" href="kanisapen\kanisa-pen.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Pen</a>, you can feed these pens into the <a data-href="KANTstamper" href="web3\kantstamper.html" class="internal-link" target="_self" rel="noopener nofollow">KANTstamper</a> smart contract to create a KANT token for use within a <a data-href="Kanisa Generator" href="kanisagen\kanisa-generator.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Generator</a> or <a data-href="Kanisa Renderer" href="kanisaren\kanisa-renderer.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Renderer</a>. <a data-href="Case of pens" href="kanisapen\case-of-pens.html" class="internal-link" target="_self" rel="noopener nofollow">Case of pens</a> will show a sample set of what could be in a Pencase.]]></description><link>kanisapen\kanisa-pen.html</link><guid isPermaLink="false">kanisaPen/Kanisa Pen.md</guid><pubDate>Tue, 07 Jan 2025 21:08:12 GMT</pubDate></item><item><title><![CDATA[Cat]]></title><description><![CDATA[ 
+ <br>A <a data-href="Pet Method" href="kanisaren\pet-method.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method</a> derived from a <a data-tooltip-position="top" aria-label="Rock > pseudo-code" data-href="Rock#pseudo-code" href="kanisaren\pet-methods\rock.html#pseudo-code" class="internal-link" target="_self" rel="noopener nofollow">rock</a> that features 4 legs and fur with two eyes and a meow.<br><br>fur_color = [WHITE, BLACK, TAN, BEIGE, BROWN, GREY]
+eye_color = [BLACK, YELLOW, GREEN, BLUE]
+location = [CRATE, BED, GRASS]
+
+
+meow():
+	speak(30, 70)
+
+purr():
+	speak(10, 30)
+
+hiss():
+	speak(50, 90)
+
+yowl():
+	speak(70, 100)
+
+]]></description><link>kanisaren\pet-methods\cat.html</link><guid isPermaLink="false">kanisaRen/Pet Methods/Cat.md</guid><pubDate>Thu, 09 Jan 2025 23:06:31 GMT</pubDate></item><item><title><![CDATA[Dog]]></title><description><![CDATA[ 
+ <br>A <a data-href="Pet Method" href="kanisaren\pet-method.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method</a> derived from a <a data-tooltip-position="top" aria-label="Rock > pseudo-code" data-href="Rock#pseudo-code" href="kanisaren\pet-methods\rock.html#pseudo-code" class="internal-link" target="_self" rel="noopener nofollow">rock</a> that features 4 legs, fur and some ears with a woof.<br><br>fur_color = [WHITE, BLACK, TAN, BEIGE, BROWN, GREY]
+eye_color = [BLACK, BROWN, GREEN, BLUE]
+location = [CRATE, BED, GRASS]
+
+
+bark():
+	speak(60, 100)
+
+growl():
+	speak(30, 60)
+
+whine():
+	speak(10, 30)
+
+howl():
+	speak(70, 100)
+
+]]></description><link>kanisaren\pet-methods\dog.html</link><guid isPermaLink="false">kanisaRen/Pet Methods/Dog.md</guid><pubDate>Thu, 09 Jan 2025 23:06:28 GMT</pubDate></item><item><title><![CDATA[Fish]]></title><description><![CDATA[ 
+ <br>A <a data-href="Pet Method" href="kanisaren\pet-method.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method</a> derived from a <a data-tooltip-position="top" aria-label="Rock > pseudo-code" data-href="Rock#pseudo-code" href="kanisaren\pet-methods\rock.html#pseudo-code" class="internal-link" target="_self" rel="noopener nofollow">rock</a> that features scales with fins and bubbles.<br><br>]]></description><link>kanisaren\pet-methods\fish.html</link><guid isPermaLink="false">kanisaRen/Pet Methods/Fish.md</guid><pubDate>Thu, 09 Jan 2025 23:06:24 GMT</pubDate></item><item><title><![CDATA[Hamster]]></title><description><![CDATA[ 
+ <br>A <a data-href="Pet Method" href="kanisaren\pet-method.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method</a> derived from a <a data-tooltip-position="top" aria-label="Rock > pseudo-code" data-href="Rock#pseudo-code" href="kanisaren\pet-methods\rock.html#pseudo-code" class="internal-link" target="_self" rel="noopener nofollow">rock</a> that features a wheel with fur and tiny squeaks.<br><br>fur_color = [WHITE, BLACK, TAN, BEIGE, BROWN]
+eye_color = [BLACK, RED]
+location = [TUBE, WHEEL, BALL, CAGE]
+
+
+squeak():
+	speak(20, 50)
+
+growl():
+	speak(30, 60)
+
+chatter():
+	speak(10, 30)
+
+scream():
+	speak(70, 100)
+
+]]></description><link>kanisaren\pet-methods\hamster.html</link><guid isPermaLink="false">kanisaRen/Pet Methods/Hamster.md</guid><pubDate>Thu, 09 Jan 2025 23:06:04 GMT</pubDate></item><item><title><![CDATA[Rock]]></title><description><![CDATA[ 
+ <br>Yes. The base pet method for all/most <a data-href="Pet Method" href="kanisaren\pet-method.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method</a>s to inherit from is the pet rock method. Within this code block, every integer needs to be based from the and should probably be a float. The idea is rather simple, a rock holds all the main functions of the decisions within a <a data-href="Kanisa Renderer" href="kanisaren\kanisa-renderer.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Renderer</a> program.<br>It deals with some very basic variable types: floats and Booleans. No strings or arrays or lists or dictionaries, nothing complicated just simple arithmetic. Numbers and True/False statements can be the back bone of a lot of different things.<br><br>isTired
+isHungry
+isThirsty
+
+tiredness=10.0
+bladder=10.0
+tummy=10.0
+
+speak(vocal_volume):
+	if vocal_volume &gt;= 80:
+		ROAR()
+	elif vocal_volume &lt;= 40:
+		SQUEAK()
+
+play():
+	while tiredness &lt;= 186:
+		tiredness += 12
+	isTired = True
+	hasToy = Flase
+	rest()
+
+rest():
+	if tiredness &lt;= 0:
+		isTired = False
+	else:
+		tiredness -= 1
+		if isTired:
+			sleep()
+
+sleep():
+	eyes.closed()
+	while isTired:
+		tiredness -= 4
+		if tiredness &lt;= 0:
+			isTired = False
+	eyes.open()
+
+eat(food):
+	if food.isEdible:
+		hunger -= 10
+		tummy += 22
+	else:
+		tummy += 30
+		afflictions += TUMMY_ACHE
+		
+drink(liquid):
+	if liquid.WATER:
+		thirst -= 10
+		bladder += 5
+	else:
+		tummy_rumbles += 10
+		bladder += 25
+
+potty():
+	if canPee:
+		tinkle()
+	if canPoop:
+		deuces()
+
+tinkle():
+	while bladder &gt;= 5:
+		bladder -= 1
+	canPee = False
+
+deuces():
+	while tummy &gt;= 50:
+		tummy -= 45
+	canPoop = False
+]]></description><link>kanisaren\pet-methods\rock.html</link><guid isPermaLink="false">kanisaRen/Pet Methods/Rock.md</guid><pubDate>Thu, 09 Jan 2025 23:00:37 GMT</pubDate></item><item><title><![CDATA[Kanisa Renderer]]></title><description><![CDATA[ 
+ <br>This kind of software will load a masterpiece and render it into some form of artwork. Each rendering program will be different and interpret the Artyles in it's own unique way. Each renderer will need a similar main menu (or masterpiece menu), where you can select and load which masterpiece you want to use. <br>Every kanisaRen application will need to utilize <a data-href="Pet Method" href="kanisaren\pet-method.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method</a> in order to interface between the different artyles and each of their own options. I didn't think this part through when I first started developing the <a data-href="Kanisa Project" href="kanisa-project.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Project</a>, it's a really tough concept for myself, but as I build it, I am learning it.<br><br>]]></description><link>kanisaren\kanisa-renderer.html</link><guid isPermaLink="false">kanisaRen/Kanisa Renderer.md</guid><pubDate>Wed, 08 Jan 2025 22:46:52 GMT</pubDate></item><item><title><![CDATA[Pet Method]]></title><description><![CDATA[ 
+ <br>Social engineering
+Pets are a huge part of social engineering, not only are they easy to talk about, people tend to use passwords or recovery questions about their pets.<br>
+DO NOT USE ACTUAL PET INFORMATION FOR THIS REASON.<br>
+Instead, make up a new pet for yourself.
+<br>When making <a data-href="Pet Method Functions" href="kanisaren\pet-method-functions.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method Functions</a>, it is important to use vague function names, this goes against programming because it's important to be precise and concise within your function names. Since an artyle needs to sometimes interact with other artyles, I came up with Pet Methods. Pets need to sometimes interact with other pets maybe they want to play, fight or help each other in mischievous shenanigans. <br>When setting up <a data-href="Pet Method Variables" href="kanisaren\pet-method-variables.html" class="internal-link" target="_self" rel="noopener nofollow">Pet Method Variables</a>, it seems that single words might work best, still working out the universal side to it all. That was easy, single words are very simple and plentiful, the more a pet is suggested the more complicated it can be with the simplicity of a rock.<br><br>All Pet methods will be derived from a pet <a data-href="Rock" href="kanisaren\pet-methods\rock.html" class="internal-link" target="_self" rel="noopener nofollow">Rock</a>. A pet rock has all the basic functionality of a pet, such as eat, sleep and poop. Also drink water, every pet needs access to these very common and basic functions. Except that pets can be all sorts of different animals.<br>We all know cats and dogs are very different (even from hamsters and birds), they have some similarities but from their personality to their size are different. They both eat, sleep and poop with tails and fur, but their speak is different. Enter, the rock, this thing does absolutely nothing and has imaginary poop. This thing is bare minimum and a great starting point because of it.<br>The <a data-tooltip-position="top" aria-label="Rock > pseudo-code" data-href="Rock#pseudo-code" href="kanisaren\pet-methods\rock.html#pseudo-code" class="internal-link" target="_self" rel="noopener nofollow">pseudo-code</a> of a rock pet <br>Some more functions might include:<br>
+speak()<br>
+wheel()<br>
+drink(liquid.WATER, sense.TASTE)<br>
+sniff(sense.SMELL)<br>
+These variables could exist:<br>
+fur_color = WHITE<br>
+eye_color = BLACK 	 location = [TUBE, WHEEL, BALL, CAGE]`<br>I currently have a dog named Blue who has helped me through more of my life than I could/should/would have asked for &lt;3. He is fluffy and white with tan and black. Most majestic creature within 500 miles (for up to a week after a bath), no joke.<br>Some functions for Blue could include:<br>
+sleep()<br>
+bark()<br>
+sniff(sense.SMELL)<br>
+poop(feeling.RELIEFE)<br>
+walk(distance.LONG)<br>
+<br>
+Possible variables:<br>
+fur_color = [WHITE, BLACK, TAN]<br>
+eye_color = BROWN 	 location = [UNDER BED, ONTOP BED, GRASS, PORCH]`<br>These are examples of non-cat pet type of methods. Cat pet methods are very much the same in quite the different manner. They are still a pet method and need to be able to interact with other pet methods for the sake of the chosen artyles. I'm not sure of the differences yet, I just know that cats have much more of a distinct personality versus other animals/pets.<br>Before a pet is a pet, it needs to be an animal, so the base method is what any animal can do, the animal method is what a specific animal can do and a pet method is tailored specific to what is needed for an artyle. This will eventually start making sense as I create the documentation for it and organize/advance the project further.<br>]]></description><link>kanisaren\pet-method.html</link><guid isPermaLink="false">kanisaRen/Pet Method.md</guid><pubDate>Thu, 09 Jan 2025 22:50:31 GMT</pubDate></item><item><title><![CDATA[Pet Method Functions]]></title><description><![CDATA[ 
+ <br>There are some base functions that all pets will have. The most obvious one would be<br>
+rest(tiredness=100): 	if tiredness &lt;= 0:<br>
+isTired = False<br>
+else:<br>
+tiredness -= 1<br>sleep(tiredness=100): 	while isTired:<br>
+eyes.closed()<br>
+tiredness -= 1<br>
+rest(tiredness)<br>
+eyes.open()<br>As the pseudo-code would suggest, this function from a pet method allows an artyle to essentially pause until a certain point is arrived. This isn't enough to fully make my point, just barely enough to get started on my point.<br>eat(food.isEdible): 	if food.isEdible: 		hunger -= 10 	else:<br>
+tummy_rumbles += 10<br>This allows for applying mathematics and discerning how the artyle should react. For instance, a Glyth could use "sleep(20)" and "eat(apple)" in an l-system for doing "nothing" as a rule and advancing/un-advancing as a different rule.]]></description><link>kanisaren\pet-method-functions.html</link><guid isPermaLink="false">kanisaRen/Pet Method Functions.md</guid><pubDate>Sun, 06 Oct 2024 03:51:27 GMT</pubDate></item><item><title><![CDATA[Pet Method Variables]]></title><description><![CDATA[ 
+ <br>The variables are about the individual pet and the characteristics of that specific pet. Of course there are still some base ones that can span multiple animals/pets.<br><br>isTired - this is a simple Boolean that represents the final decision of if a pet is truly tired or not.<br>
+isHungry - is another Boolean that determines if the pet is<br>
+isThirsty <br>......]]></description><link>kanisaren\pet-method-variables.html</link><guid isPermaLink="false">kanisaRen/Pet Method Variables.md</guid><pubDate>Thu, 09 Jan 2025 21:19:47 GMT</pubDate></item><item><title><![CDATA[Discord Bot]]></title><description><![CDATA[ 
+ <br>Controlled by <a data-href="Texioty" href="kanisagen\textioty\texioty.html" class="internal-link" target="_self" rel="noopener nofollow">Texioty</a>.]]></description><link>web2\discord\discord-bot.html</link><guid isPermaLink="false">WEB2/Discord/Discord Bot.md</guid><pubDate>Fri, 10 Jan 2025 03:25:09 GMT</pubDate></item><item><title><![CDATA[Reddit Bot]]></title><description><![CDATA[ 
+ <br>Controlled by <a data-href="Texioty" href="kanisagen\textioty\texioty.html" class="internal-link" target="_self" rel="noopener nofollow">Texioty</a>.]]></description><link>web2\reddit\reddit-bot.html</link><guid isPermaLink="false">WEB2/Reddit/Reddit Bot.md</guid><pubDate>Fri, 10 Jan 2025 03:25:07 GMT</pubDate></item><item><title><![CDATA[Twitter Bot]]></title><description><![CDATA[ 
+ <br>Controlled by <a data-href="Texioty" href="kanisagen\textioty\texioty.html" class="internal-link" target="_self" rel="noopener nofollow">Texioty</a>.]]></description><link>web2\twitter\twitter-bot.html</link><guid isPermaLink="false">WEB2/Twitter/Twitter Bot.md</guid><pubDate>Fri, 10 Jan 2025 03:25:10 GMT</pubDate></item><item><title><![CDATA[WEB2 connections]]></title><description><![CDATA[ 
+ <br>I've also been working with this kanisaWallet application, it currently serves as a <a data-href="penGen" href="kanisagen\pengen.html" class="internal-link" target="_self" rel="noopener nofollow">penGen</a>. I'd like to make it a separate thing from this original project.<br>In fact, I think the kanisaWallet might be better if it was generated from a penGen. Which it would be classified as a <a data-href="regGen" href="kanisagen\reggen.html" class="internal-link" target="_self" rel="noopener nofollow">regGen</a>, and might work best. So kanisaWallet will be a thing eventually]]></description><link>web2\web2-connections.html</link><guid isPermaLink="false">WEB2/WEB2 connections.md</guid><pubDate>Fri, 10 Jan 2025 01:46:24 GMT</pubDate></item><item><title><![CDATA[KANTstamper]]></title><description><![CDATA[ 
+ <br>Solidity smart contract that people can send kanisaPens to and once a KANT token is deposited (from the same address), the person will receive a stamped KANT token (used for accessing features on the kanisaGen and kanisaRen applications).<br>Whenever a(n) address/person sends a kanisaPen to the KANTstamper smart contract, KANTstamper will start a new "pencil case" which will hold all kanisaPens sent from the same address until a KANT token is sent to KANTstamper. Once a KANT token is received, KANTstamper will mint a new KANT token<br><a data-href="Tokenomics" href="web3\tokenomics.html" class="internal-link" target="_self" rel="noopener nofollow">Tokenomics</a> should show and explain the amount of tokens that should be in circulation, as well as explain how each token interacts with each part of the project.]]></description><link>web3\kantstamper.html</link><guid isPermaLink="false">WEB3/KANTstamper.md</guid><pubDate>Wed, 08 Jan 2025 01:16:05 GMT</pubDate></item><item><title><![CDATA[Pen-ding Machine]]></title><description><![CDATA[ 
+ <br>Please change this name, it's a "vending machine" that dispenses Kanisa Pens and then will stamp it into a kanisaGen token.<br>Once a person has collected the characters they would like to use in a <a data-href="Kanisa Generator" href="kanisagen\kanisa-generator.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Generator</a> or <a data-href="Kanisa Renderer" href="kanisaren\kanisa-renderer.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Renderer</a>, they return the pens to the vending machine smart contract along with a KANT token and the person will mint a masterpiece NFT. The kanisaGen and kanisaRen applications will recognize the masterpiece formation and change according to the contents of the masterpiece.]]></description><link>web3\pen-ding-machine.html</link><guid isPermaLink="false">WEB3/Pen-ding Machine.md</guid><pubDate>Mon, 06 Jan 2025 00:39:39 GMT</pubDate></item><item><title><![CDATA[Tokenomics]]></title><description><![CDATA[ 
+ <br>Each  kanisaPen will cost 2 LRC and a KANT token will cost 5 LRC.<br>
+A person will need between 2-16 kanisaPens and 1 KANT token, in which they will receive a <br>Starting with:<br>
+100 KANT tokens<br>
+10 pens for each character (a-z, 0-9)<br>All KANT tokens will start as an ERC-20 until used within a KANTstamper, in which it'll be minted into an ERC-721.<br>The KANTstamper is a smart contract for turning kanisaPens into a masterpiece NFT. Each kanisaPen with have its own set of artyles and options, and the primary role for a kanisaPen is to create a masterpiece. The created masterpiece will be used in kanisaRen projects.]]></description><link>web3\tokenomics.html</link><guid isPermaLink="false">WEB3/Tokenomics.md</guid><pubDate>Sun, 05 Jan 2025 21:49:26 GMT</pubDate></item><item><title><![CDATA[Artribute Spectrums]]></title><description><![CDATA[ 
+ <br><br>When selecting objects for a spectrum, they don't need to be related in any way other than their relation.<br>A great example would be the "Animation Amount" spectrum, it uses the rock and a sock to describe how much of the animation should be moving. The rock has no flexibility so it'll have very little animation amount, compared to the sock which is completely flexible so it would have more animated pieces.<br>The best follow up example would be fire and ice for "Animation Speed" spectrum. Fire is very much rapid, the speed is fast, compared to ice which slowly grows as it gets colder. These Artribute Spectrums are not set in stone, they can become something else. Rabbit and Turtle would be a good choice for this spectrum as well.<br>One more decent example to share is "Coloration" being separated into Rainbow and Cloud. Clouds are very much grey scale and can be white or dark grey, Rainbows are colorful. That's it, it's that simple.<br>If you need a spectrum for any reason, just think of two objects that can relate to the spectrum itself. Each use is limited and very specific for use, but the uses of those uses should be very useful.]]></description><link>artribute-spectrums.html</link><guid isPermaLink="false">Artribute Spectrums.md</guid><pubDate>Wed, 08 Jan 2025 00:02:09 GMT</pubDate></item><item><title><![CDATA[Kanisa Project]]></title><description><![CDATA[ 
+ <br><br>Kanisa is an art project that I undertook near the start 2014. Since then, I have been contemplating, thinking and learning about Python and Godot. I believe these are the two languages that can complete this project in completeness.<br>Kanisa is a word I smashed together from "Kenaz" and "Isa" and changed the 'e' into an 'a' for better spelling. "Kenaz" is an Elder Futhark rune symbolizing a creative fire and "Isa" is the rune of ice and its solid resolve.<br>I don't fully remember why I picked these two, I just liked the word when I heard it and it's worked thus far.<br><br>There are two main parts to the whole project, the generator and the renderer. The generator is used to create a Masterpiece file and the renderer is used for displaying a <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a>. The generators and renderers can hold multiple files, but only display one at a time.<br><br>The <a data-href="Kanisa Generator" href="kanisagen\kanisa-generator.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Generator</a> will have two separate types, one that can create <a data-href="Kanisa Pen" href="kanisapen\kanisa-pen.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Pen</a>s and one that only uses the <a data-href="Masterpiece File" href="masterpiece-file.html" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece File</a>. Both types can use the Masterpiece file, but only "penGens" can create a Kanisa pen. Generators require a lot more work to maintain. The generator will need to interface with the users computer, and if the user wishes to modify the generator, knowledge will be required.<br><br>The <a data-href="Kanisa Renderer" href="kanisaren\kanisa-renderer.html" class="internal-link" target="_self" rel="noopener nofollow">Kanisa Renderer</a> will be more different. These will require a lot less work to maintain, once one is built (maybe minted?), it is complete and cannot be changed. There will be an available template to build one, the work should be pretty straight forward and simple, just plenty to do before completing a renderer.<br>Anyone who wants to make a Kanisa rendering program, should be able to make a Kanisa rendering program, in any language that can use JSON files. This will be key to its success as a whole project because, everyone interprets and renders information in their own unique way. This art project is meant to bridge gaps between learning curves and increase communication between people and people or machine and people or even people to machine and possibly machine to machine. That message didn't come across correctly and it'll be okay.]]></description><link>kanisa-project.html</link><guid isPermaLink="false">Kanisa Project.md</guid><pubDate>Thu, 09 Jan 2025 23:15:36 GMT</pubDate></item><item><title><![CDATA[Masterpiece File]]></title><description><![CDATA[ 
+ <br>Is a JSON file that matches specific keys in a certain pattern.<br>Every masterpiece file will start with a "use_id" key that has a string for a value and a "use_utc" key which has a 10-digit number for the value. A use_id with only one character is a kanisaPen, 2+ are required for use in a Kanisa Renderer<br>The next two keys that will certainly exist is the "color_list" that contains a list of RGB values and "number_list" which is the "use_utc" in a list sorted numerically.<br>The final key that makes a JSON file a Masterpiece, is the "Artributes" key and is a term that I made up. Artributes specify different spectrums in order for the Generator or Renderer to create different things.<br>So in summary, the keys that make a JSON file into a Masterpiece file are as follows:<br>]]></description><link>masterpiece-file.html</link><guid isPermaLink="false">Masterpiece File.md</guid><pubDate>Mon, 06 Jan 2025 00:36:28 GMT</pubDate></item><item><title><![CDATA[Terminology Index and Glossary]]></title><description><![CDATA[ 
+ <br>These are some terms that I made up, or some that I am using in a different context than is generally understood.<br>aRtay - This holds the many different <a data-tooltip-position="top" aria-label="^4d6644" data-href="#^4d6644" href="about:blank#^4d6644" class="internal-link" target="_self" rel="noopener nofollow">Artyles</a> for a kanisaGen to use for creating more elaborate <a data-tooltip-position="top" aria-label="^dbb150" data-href="#^dbb150" href="about:blank#^dbb150" class="internal-link" target="_self" rel="noopener nofollow">Masterpiece</a> files<br>Artyle - This would be an art style, such as a Glyth, Glyph, Foto, Recipe, or Spirite. Each style has it's own unique generation and requirements within a Masterpiece file. <br>kanisaGen - Is part of the Kanisa art project and will generate <a data-tooltip-position="top" aria-label="^dbb150" data-href="#^dbb150" href="about:blank#^dbb150" class="internal-link" target="_self" rel="noopener nofollow">masterpieces</a> based off of options and choices selected by the creator. These masterpieces can then be used in a <a data-tooltip-position="top" aria-label="^abdbf1" data-href="#^abdbf1" href="about:blank#^abdbf1" class="internal-link" target="_self" rel="noopener nofollow">kanisaRen</a> application. <br>kanisaPen - Is part of the Kanisa art project and will create single character use_id with the 10-digit use_utc, these are not meant to be rendered and weird things happen in a <a data-tooltip-position="top" aria-label="^969569" data-href="#^969569" href="about:blank#^969569" class="internal-link" target="_self" rel="noopener nofollow">kanisaGen</a> program.<br>kanisaRen - Is part of the Kanisa art project and will interpret and render any loaded <a data-tooltip-position="top" aria-label="^dbb150" data-href="#^dbb150" href="about:blank#^dbb150" class="internal-link" target="_self" rel="noopener nofollow">masterpiece</a> files. Can load files from local machine and/or WEB2 and/or WEB3, each rendering application can be standalone. <br>Masterpiece - This is basically just a JSON file with specific key-value pairs, some pairs in a certain order. ]]></description><link>terminology-index-and-glossary.html</link><guid isPermaLink="false">Terminology Index and Glossary.md</guid><pubDate>Thu, 03 Oct 2024 18:36:11 GMT</pubDate></item></channel></rss>

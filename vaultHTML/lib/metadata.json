@@ -1,0 +1,665 @@
+{
+  "vaultName": "KanisaVault",
+  "lastExport": 1736535733832,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "Artyles/Foto/Foto Idea.md",
+    "Artyles/Foto/Foto Options.md",
+    "Artyles/Gaym/Gaym Idea.md",
+    "Artyles/Gaym/Gaym Options.md",
+    "Artyles/Glyph/Glyph Idea.md",
+    "Artyles/Glyph/Glyph Options.md",
+    "Artyles/Glyth/Glyth Idea.md",
+    "Artyles/Glyth/Glyth Options.md",
+    "Artyles/Mujic/Mujic Idea.md",
+    "Artyles/Mujic/Mujic Options.md",
+    "Artyles/Recipe/Recipe Idea.md",
+    "Artyles/Recipe/Recipe Options.md",
+    "Artyles/Spirite/Spirite Idea.md",
+    "Artyles/Spirite/Spirite Options.md",
+    "Artyles/Wordie/Wordie Idea.md",
+    "Artyles/Wordie/Wordie Options.md",
+    "Artyles/Artyles.md",
+    "kanisaGen/aRtay/aRtay.md",
+    "kanisaGen/IDUTC/IDUTC.md",
+    "kanisaGen/Kinvow/Kinvow.md",
+    "kanisaGen/Textioty/Texioty.md",
+    "kanisaGen/Textioty/Texity.md",
+    "kanisaGen/Textioty/Texoty.md",
+    "kanisaGen/Kanisa Generator.md",
+    "kanisaGen/penGen.md",
+    "kanisaGen/regGen.md",
+    "kanisaPen/0-9/0.md",
+    "kanisaPen/0-9/1.md",
+    "kanisaPen/0-9/5.md",
+    "kanisaPen/0-9/6.md",
+    "kanisaPen/a-z/a.md",
+    "kanisaPen/a-z/b.md",
+    "kanisaPen/a-z/e.md",
+    "kanisaPen/a-z/f.md",
+    "kanisaPen/a-z/l.md",
+    "kanisaPen/a-z/t.md",
+    "kanisaPen/Case of pens.md",
+    "kanisaPen/Kanisa Pen.md",
+    "kanisaPen/stampingFlow.canvas",
+    "kanisaRen/Pet Methods/Cat.md",
+    "kanisaRen/Pet Methods/Dog.md",
+    "kanisaRen/Pet Methods/Fish.md",
+    "kanisaRen/Pet Methods/Hamster.md",
+    "kanisaRen/Pet Methods/Rock.md",
+    "kanisaRen/Kanisa Renderer.md",
+    "kanisaRen/Pet Method.md",
+    "kanisaRen/Pet Method Functions.md",
+    "kanisaRen/Pet Method Variables.md",
+    "kanisaRen/RenderAppTemplate.canvas",
+    "WEB2/Discord/Discord Bot.md",
+    "WEB2/Reddit/Reddit Bot.md",
+    "WEB2/Twitter/Twitter Bot.md",
+    "WEB2/WEB2 connections.md",
+    "WEB3/KANTstamper.md",
+    "WEB3/Pen-ding Machine.md",
+    "WEB3/Tokenomics.md",
+    "Artribute Spectrums.md",
+    "Kanisa Project.md",
+    "Masterpiece File.md",
+    "Raspbridge Pi.canvas",
+    "Terminology Index and Glossary.md",
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/main-styles.css"
+  ],
+  "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/main-styles.css"
+  ],
+  "fileInfo": {
+    "Artyles/Foto/Foto Idea.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 945,
+      "exportedPath": "artyles/foto/foto-idea.html",
+      "dependencies": []
+    },
+    "Artyles/Foto/Foto Options.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 448,
+      "exportedPath": "artyles/foto/foto-options.html",
+      "dependencies": []
+    },
+    "Artyles/Gaym/Gaym Idea.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 3005,
+      "exportedPath": "artyles/gaym/gaym-idea.html",
+      "dependencies": []
+    },
+    "Artyles/Gaym/Gaym Options.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 259,
+      "exportedPath": "artyles/gaym/gaym-options.html",
+      "dependencies": []
+    },
+    "Artyles/Glyph/Glyph Idea.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 555,
+      "exportedPath": "artyles/glyph/glyph-idea.html",
+      "dependencies": []
+    },
+    "Artyles/Glyph/Glyph Options.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 165,
+      "exportedPath": "artyles/glyph/glyph-options.html",
+      "dependencies": []
+    },
+    "Artyles/Glyth/Glyth Idea.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1209,
+      "exportedPath": "artyles/glyth/glyth-idea.html",
+      "dependencies": []
+    },
+    "Artyles/Glyth/Glyth Options.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 95,
+      "exportedPath": "artyles/glyth/glyth-options.html",
+      "dependencies": []
+    },
+    "Artyles/Mujic/Mujic Idea.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 269,
+      "exportedPath": "artyles/mujic/mujic-idea.html",
+      "dependencies": []
+    },
+    "Artyles/Mujic/Mujic Options.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 86,
+      "exportedPath": "artyles/mujic/mujic-options.html",
+      "dependencies": []
+    },
+    "Artyles/Recipe/Recipe Idea.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 556,
+      "exportedPath": "artyles/recipe/recipe-idea.html",
+      "dependencies": []
+    },
+    "Artyles/Recipe/Recipe Options.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 282,
+      "exportedPath": "artyles/recipe/recipe-options.html",
+      "dependencies": []
+    },
+    "Artyles/Spirite/Spirite Idea.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 4216,
+      "exportedPath": "artyles/spirite/spirite-idea.html",
+      "dependencies": []
+    },
+    "Artyles/Spirite/Spirite Options.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 222,
+      "exportedPath": "artyles/spirite/spirite-options.html",
+      "dependencies": []
+    },
+    "Artyles/Wordie/Wordie Idea.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 773,
+      "exportedPath": "artyles/wordie/wordie-idea.html",
+      "dependencies": []
+    },
+    "Artyles/Wordie/Wordie Options.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 476,
+      "exportedPath": "artyles/wordie/wordie-options.html",
+      "dependencies": []
+    },
+    "Artyles/Artyles.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1630,
+      "exportedPath": "artyles/artyles.html",
+      "dependencies": []
+    },
+    "kanisaGen/aRtay/aRtay.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1215,
+      "exportedPath": "kanisagen/artay/artay.html",
+      "dependencies": []
+    },
+    "kanisaGen/IDUTC/IDUTC.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 773,
+      "exportedPath": "kanisagen/idutc/idutc.html",
+      "dependencies": []
+    },
+    "kanisaGen/Kinvow/Kinvow.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 472,
+      "exportedPath": "kanisagen/kinvow/kinvow.html",
+      "dependencies": []
+    },
+    "kanisaGen/Textioty/Texioty.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 908,
+      "exportedPath": "kanisagen/textioty/texioty.html",
+      "dependencies": []
+    },
+    "kanisaGen/Textioty/Texity.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 816,
+      "exportedPath": "kanisagen/textioty/texity.html",
+      "dependencies": []
+    },
+    "kanisaGen/Textioty/Texoty.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 849,
+      "exportedPath": "kanisagen/textioty/texoty.html",
+      "dependencies": []
+    },
+    "kanisaGen/Kanisa Generator.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1069,
+      "exportedPath": "kanisagen/kanisa-generator.html",
+      "dependencies": []
+    },
+    "kanisaGen/penGen.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 432,
+      "exportedPath": "kanisagen/pengen.html",
+      "dependencies": []
+    },
+    "kanisaGen/regGen.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 198,
+      "exportedPath": "kanisagen/reggen.html",
+      "dependencies": []
+    },
+    "kanisaPen/0-9/0.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 981,
+      "exportedPath": "kanisapen/0-9/0.html",
+      "dependencies": []
+    },
+    "kanisaPen/0-9/1.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 869,
+      "exportedPath": "kanisapen/0-9/1.html",
+      "dependencies": []
+    },
+    "kanisaPen/0-9/5.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 869,
+      "exportedPath": "kanisapen/0-9/5.html",
+      "dependencies": []
+    },
+    "kanisaPen/0-9/6.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 972,
+      "exportedPath": "kanisapen/0-9/6.html",
+      "dependencies": []
+    },
+    "kanisaPen/a-z/a.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 981,
+      "exportedPath": "kanisapen/a-z/a.html",
+      "dependencies": []
+    },
+    "kanisaPen/a-z/b.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 999,
+      "exportedPath": "kanisapen/a-z/b.html",
+      "dependencies": []
+    },
+    "kanisaPen/a-z/e.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 972,
+      "exportedPath": "kanisapen/a-z/e.html",
+      "dependencies": []
+    },
+    "kanisaPen/a-z/f.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1075,
+      "exportedPath": "kanisapen/a-z/f.html",
+      "dependencies": []
+    },
+    "kanisaPen/a-z/l.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1055,
+      "exportedPath": "kanisapen/a-z/l.html",
+      "dependencies": []
+    },
+    "kanisaPen/a-z/t.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1075,
+      "exportedPath": "kanisapen/a-z/t.html",
+      "dependencies": []
+    },
+    "kanisaPen/Case of pens.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 395,
+      "exportedPath": "kanisapen/case-of-pens.html",
+      "dependencies": []
+    },
+    "kanisaPen/Kanisa Pen.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 3963,
+      "exportedPath": "kanisapen/kanisa-pen.html",
+      "dependencies": []
+    },
+    "kanisaPen/stampingFlow.canvas": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1297,
+      "exportedPath": "kanisapen/stampingflow.html",
+      "dependencies": []
+    },
+    "kanisaRen/Pet Methods/Cat.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 360,
+      "exportedPath": "kanisaren/pet-methods/cat.html",
+      "dependencies": []
+    },
+    "kanisaRen/Pet Methods/Dog.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 359,
+      "exportedPath": "kanisaren/pet-methods/dog.html",
+      "dependencies": []
+    },
+    "kanisaRen/Pet Methods/Fish.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 126,
+      "exportedPath": "kanisaren/pet-methods/fish.html",
+      "dependencies": []
+    },
+    "kanisaRen/Pet Methods/Hamster.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 347,
+      "exportedPath": "kanisaren/pet-methods/hamster.html",
+      "dependencies": []
+    },
+    "kanisaRen/Pet Methods/Rock.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1443,
+      "exportedPath": "kanisaren/pet-methods/rock.html",
+      "dependencies": []
+    },
+    "kanisaRen/Kanisa Renderer.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 649,
+      "exportedPath": "kanisaren/kanisa-renderer.html",
+      "dependencies": []
+    },
+    "kanisaRen/Pet Method.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 3871,
+      "exportedPath": "kanisaren/pet-method.html",
+      "dependencies": []
+    },
+    "kanisaRen/Pet Method Functions.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 849,
+      "exportedPath": "kanisaren/pet-method-functions.html",
+      "dependencies": []
+    },
+    "kanisaRen/Pet Method Variables.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 374,
+      "exportedPath": "kanisaren/pet-method-variables.html",
+      "dependencies": []
+    },
+    "kanisaRen/RenderAppTemplate.canvas": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1034,
+      "exportedPath": "kanisaren/renderapptemplate.html",
+      "dependencies": []
+    },
+    "WEB2/Discord/Discord Bot.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 26,
+      "exportedPath": "web2/discord/discord-bot.html",
+      "dependencies": []
+    },
+    "WEB2/Reddit/Reddit Bot.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 26,
+      "exportedPath": "web2/reddit/reddit-bot.html",
+      "dependencies": []
+    },
+    "WEB2/Twitter/Twitter Bot.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 26,
+      "exportedPath": "web2/twitter/twitter-bot.html",
+      "dependencies": []
+    },
+    "WEB2/WEB2 connections.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 356,
+      "exportedPath": "web2/web2-connections.html",
+      "dependencies": []
+    },
+    "WEB3/KANTstamper.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 703,
+      "exportedPath": "web3/kantstamper.html",
+      "dependencies": []
+    },
+    "WEB3/Pen-ding Machine.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 507,
+      "exportedPath": "web3/pen-ding-machine.html",
+      "dependencies": []
+    },
+    "WEB3/Tokenomics.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 615,
+      "exportedPath": "web3/tokenomics.html",
+      "dependencies": []
+    },
+    "Artribute Spectrums.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1169,
+      "exportedPath": "artribute-spectrums.html",
+      "dependencies": []
+    },
+    "Kanisa Project.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 2186,
+      "exportedPath": "kanisa-project.html",
+      "dependencies": []
+    },
+    "Masterpiece File.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1899,
+      "exportedPath": "masterpiece-file.html",
+      "dependencies": []
+    },
+    "Raspbridge Pi.canvas": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 6082,
+      "exportedPath": "raspbridge-pi.html",
+      "dependencies": []
+    },
+    "Terminology Index and Glossary.md": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1261,
+      "exportedPath": "terminology-index-and-glossary.html",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.wasm": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 23377,
+      "exportedPath": "lib/scripts/graph-wasm.wasm",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 35730,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-view.js": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 15519,
+      "exportedPath": "lib/scripts/graph-view.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.js": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 14021,
+      "exportedPath": "lib/scripts/graph-wasm.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-render-worker.js": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 5179,
+      "exportedPath": "lib/scripts/graph-render-worker.js",
+      "dependencies": []
+    },
+    "lib/scripts/tinycolor.js": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 29832,
+      "exportedPath": "lib/scripts/tinycolor.js",
+      "dependencies": []
+    },
+    "lib/scripts/pixi.js": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 449509,
+      "exportedPath": "lib/scripts/pixi.js",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 1105,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-data.js": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 4551,
+      "exportedPath": "lib/scripts/graph-data.js",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 131118,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 236,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1736535733832,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    }
+  }
+}
